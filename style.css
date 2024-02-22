@@ -1,0 +1,81 @@
+* { /*selettore universale*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1c1c1c;
+}
+
+/*----- Header -----*/
+header {
+    position: fixed;    /* l'header rimane fisso */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 4px 80px;    /*top e bottom paddings sono 20px, right e left sono 100px*/
+    display: flex;
+    justify-content: space-between; /*altrimenti le scritte verrebbero storte*/
+    align-items: center;
+    z-index: 99;
+    background: #1c1c1cA1;
+}
+
+.logo {
+    width: 15vw;
+    height: 15vh;
+    user-select: none;  /* non si può selezionare il logo */
+}
+
+#info, #infoattuale {
+    position: relative;
+    font-size: 3vh;
+    color: #ddc962;
+    text-decoration: none;  /*così che non si veda la classica sottolineatura delle parole*/
+    font-weight: 500;
+    margin-left: 4vw;
+}
+
+#info::after, #infoattuale::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.5vh;
+    width: 100%;
+    height: 3px;
+    background: #ddc962;    /*color oro 25% più chiaro e 25% più desaturato*/
+    border-radius: 5px;
+    transform-origin: right; /*così che la linea scompaia da destra*/
+    transform: scaleX(0);   
+    transition: transform .5s;  /* così che la linea sotto appaia lentamente*/
+}
+
+/* quando si passa sopra con il muose appare la linea*/
+#info:hover::after, #infoattuale::after {
+    transform-origin: left; /* così che la line appaia da sinistra*/
+    transform: scaleX(1); 
+}
+
+
+
+.navigation .btnLogin-popup {
+    width: 8.5vw;
+    height: 6.5vh;
+    background: transparent;
+    border: 2px solid #ddc962;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 3vh;
+    color: #ddc962;
+    font-weight: 500;   /* se il testo è sottile o più in grassetto*/
+    margin-left: 4vw;
+    transition: .5s;
+}
+
+/* per cambiare il bottone login al passaggio del mouse*/
+.navigation .btnLogin-popup:hover {
+    background: #ddc962;    /* cambia il colore dello sfondo del bottone*/
+    color: #1c1c1c;         /* cambia il colore della scritta Login */
+}
