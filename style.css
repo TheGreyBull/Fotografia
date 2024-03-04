@@ -79,3 +79,10 @@ header {
     background: #ddc962;    /* cambia il colore dello sfondo del bottone*/
     color: #1c1c1c;         /* cambia il colore della scritta Login */
 }
+
+#selectLingue {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
