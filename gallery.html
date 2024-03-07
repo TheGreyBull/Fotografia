@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="gallery.css">
+
+        <!-- font style -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <section>
+        <header>
+            <img src="./immagini/logo.png" alt="" class="logo">
+            <nav class="navigation">
+                <a id="info" href="index.html">Home</a>
+                <a id="infoattuale" href="#">Gallery</a>
+                <a id="info" href="#Contact">Contact</a>
+                <a id="info" href="FaQ.html">FaQ</a>
+                <a id="botton" href="login.html"><button class="btnLogin-popup">Login</button></a>
+            </nav>
+        </header>
+
+        <section class="home">
+
+            <video src="./gallery/pexels-mart-production-7565822 (1080p).mp4" autoplay muted loop class="video-slide active"></video>
+            <video src="./gallery/pianoforte.mp4" autoplay muted loop class="video-slide"></video>
+            <video src="./gallery/Latin music.mp4" autoplay muted loop class="video-slide"></video>
+            <video src="./gallery/video (2160p).mp4" autoplay muted loop class="video-slide"></video>
+
+            <div class="content active">
+                <h1>Musica <br> pop</h1>
+                <a href="#imgContainer_pop">See More</a>
+            </div>
+
+            <div class="content">
+                <h1>Musica classica</h1>
+                <a href="#imgContainer_classic">See More</a>
+            </div>
+
+            <div class="content">
+                <h1>Musica latina</h1>
+                <a href="#imgContainer_latin">See More</a>
+            </div>
+
+            <div class="content">
+                <h1>Musica elettronica</h1>
+                <a href="#imgContainer_electro">See More</a>
+            </div>
+
+            <div class="media-icons">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+            </div>
+            <div class="slider-navigation">
+                <div class="nav-btn active"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+                <div class="nav-btn"></div>
+            </div>
+        
+        </section>
+
+        <script>
+            //javascript per il slider video
+            const btns = document.querySelectorAll(".nav-btn");
+            const slides = document.querySelectorAll(".video-slide");
+            const contents = document.querySelectorAll(".content");
+
+            var sliderNav=function(manual){
+                btns.forEach((btn) => {
+                    btn.classList.remove("active");
+                })
+
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                })
+                
+                contents.forEach((content) => {
+                    content.classList.remove("active");
+                })
+
+                btns[manual].classList.add("active");
+                slides[manual].classList.add("active");
+                contents[manual].classList.add("active");
+            }
+
+            btns.forEach((btn, i) => {
+                btn.addEventListener("click", () => {
+                    sliderNav(i);
+                })
+            })
+        </script>
+
+</section>
+
+        <!--SLIDER IMAGES-->
+        <div id="Container_pop">
+            <h1 class="typemusic">Musica pop</h1>
+            <div class="container_pop">
+                <span class="slider_pop" id="slider_pop1"></span>
+                <span class="slider_pop" id="slider_pop2"></span>
+                <span class="slider_pop" id="slider_pop3"></span>
+                <span class="slider_pop" id="slider_pop4"></span>
+                <span class="slider_pop" id="slider_pop5"></span>
+                <span class="slider_pop" id="slider_pop6"></span>
+                <span class="slider_pop" id="slider_pop7"></span>
+        
+                <div class="imgContainer_pop" id="imgContainer_pop">
+                    <div class="slide_div_pop">
+                        <img src="./gallery/pop.jpg" alt="" class="img_pop" id="img_pop1">
+                        <a href="#slider_pop1" class="button_pop" id="button_pop1"></a>
+                    </div>
+        
+                    <div class="slide_div_pop">
+                        <img src="./gallery/pop1.webp" alt="" class="img_pop" id="img_pop2">
+                        <a href="#slider_pop2" class="button_pop" id="button_pop2"></a>
+                    </div>
+        
+                    <div class="slide_div_pop">
+                        <img src="./gallery/pop2.jpg" alt="" class="img_pop" id="img_pop3">
+                        <a href="#slider_pop3" class="button_pop" id="button_pop3"></a>
+                    </div>
+        
+                    <div class="slide_div_pop">
+                        <img src="./gallery/pop3.jpg" alt="" class="img_pop" id="img_pop4">
+                        <a href="#slider_pop4" class="button_pop" id="button_pop4"></a>
+                    </div>
+        
+                    <div class="slide_div_pop">
+                        <img src="./gallery/pop4.jpg" alt="" class="img_pop" id="img_pop5">
+                        <a href="#slider_pop5" class="button_pop" id="button_pop5"></a>
+                    </div>
+
+                    <div class="slide_div_pop">
+                        <img src="./gallery/pop5.jpg" alt="" class="img_pop" id="img_pop6">
+                        <a href="#slider_pop6" class="button_pop" id="button_pop6"></a>
+                    </div>
+        
+                    <div class="slide_div_pop">
+                        <img src="./gallery/pop6.jpeg" alt="" class="img_pop" id="img_pop7">
+                        <a href="#slider_pop7" class="button_pop" id="button_pop7"></a>
+                    </div>
+                </div>
+            </div>
+        
+                        
+        </div>
+        
+        <div id="Container_classic">
+            <h1 class="typemusic">Musica classica</h1>
+            <div class="container_classic">
+                <span class="slider_classic" id="slider_classic1"></span>
+                <span class="slider_classic" id="slider_classic2"></span>
+                <span class="slider_classic" id="slider_classic3"></span>
+                <span class="slider_classic" id="slider_classic4"></span>
+                <span class="slider_classic" id="slider_classic5"></span>
+                <span class="slider_classic" id="slider_classic6"></span>
+                <span class="slider_classic" id="slider_classic7"></span>
+        
+                <div class="imgContainer_classic" id="imgContainer_classic">
+                    <div class="slide_div_classic" id="slide_classic1">
+                        <img src="./gallery/classic.jpg" alt="" class="img_classic" id="img_classic1">
+                        <a href="#slider_classic1" class="button_classic" id="button_classic1"></a>
+                    </div>
+        
+                    <div class="slide_div_classic" id="slide_classic2">
+                        <img src="./gallery/classic1.jpg" alt="" class="img_classic" id="img_classic2">
+                        <a href="#slider_classic2" class="button_classic" id="button_classic2"></a>
+                    </div>
+        
+                    <div class="slide_div_classic" id="slide_classic3">
+                        <img src="./gallery/classic2.jpg" alt="" class="img_classic" id="img_classic3">
+                        <a href="#slider_classic3" class="button_classic" id="button_classic3"></a>
+                    </div>
+        
+                    <div class="slide_div_classic" id="slide_classic4">
+                        <img src="./gallery/classic3.jpeg" alt="" class="img_classic" id="img_classic4">
+                        <a href="#slider_classic4" class="button_classic" id="button_classic4"></a>
+                    </div>
+        
+                    <div class="slide_div_classic" id="slide_classic5">
+                        <img src="./gallery/classic4.webp" alt="" class="img_classic" id="img_classic5">
+                        <a href="#slider_classic5" class="button_classic" id="button_classic5"></a>
+                    </div>
+        
+                    <div class="slide_div_classic" id="slide_classic6">
+                        <img src="./gallery/classic5.jpg" alt="" class="img_classic" id="img_classic6">
+                        <a href="#slider_classic6" class="button_classic" id="button_classic6"></a>
+                    </div>
+        
+                    <div class="slide_div_classic" id="slide_classic7">
+                        <img src="./gallery/classic6.jpg" alt="" class="img_classic" id="img_classic7">
+                        <a href="#slider_classic7" class="button_classic" id="button_classic7"></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div id="Container_latin">
+            <h1 class="typemusic">Musica latina</h1>
+            <div class="container_latin">
+                <span class="slider_latin" id="slider_latin1"></span>
+                <span class="slider_latin" id="slider_latin2"></span>
+                <span class="slider_latin" id="slider_latin3"></span>
+                <span class="slider_latin" id="slider_latin4"></span>
+                <span class="slider_latin" id="slider_latin5"></span>
+                <span class="slider_latin" id="slider_latin6"></span>
+                <span class="slider_latin" id="slider_latin7"></span>
+        
+                <div class="imgContainer_latin" id="imgContainer_latin">
+                    <div class="slide_div_latin" id="slide_latin1">
+                        <img src="./gallery/latin0.jpeg" alt="" class="img_latin" id="img_latin1">
+                        <a href="#slider_latin1" class="button_latin" id="button_latin1"></a>
+                    </div>
+        
+                    <div class="slide_div_latin" id="slide_latin2">
+                        <img src="./gallery/latin1.jpg" alt="" class="img_latin" id="img_latin2">
+                        <a href="#slider_latin2" class="button_latin" id="button_latin2"></a>
+                    </div>
+        
+                    <div class="slide_div_latin" id="slide_latin3">
+                        <img src="./gallery/latin2.jpeg" alt="" class="img_latin" id="img_latin3">
+                        <a href="#slider_latin3" class="button_latin" id="button_latin3"></a>
+                    </div>
+        
+                    <div class="slide_div_latin" id="slide_latin4">
+                        <img src="./gallery/latin3.jpg" alt="" class="img_latin" id="img_latin4">
+                        <a href="#slider_latin4" class="button_latin" id="button_latin4"></a>
+                    </div>
+        
+                    <div class="slide_div_latin" id="slide_latin5">
+                        <img src="./gallery/latin4.jpg" alt="" class="img_latin" id="img_latin5">
+                        <a href="#slider_latin5" class="button_latin" id="button_latin5"></a>
+                    </div>
+        
+                    <div class="slide_div_latin" id="slide_latin6">
+                        <img src="./gallery/latin5.jpg" alt="" class="img_latin" id="img_latin6">
+                        <a href="#slider_latin6" class="button_latin" id="button_latin6"></a>
+                    </div>
+        
+                    <div class="slide_div_latin" id="slide_latin7">
+                        <img src="./gallery/latin6.webp" alt="" class="img_latin" id="img_latin7">
+                        <a href="#slider_latin7" class="button_latin" id="button_latin7"></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div id="Container_electro">
+            <h1 class="typemusic">Musica elettronica</h1>
+            <div class="container_electro" id="imgContainer_electro">
+                <span class="slider_electro" id="slider_electro1"></span>
+                <span class="slider_electro" id="slider_electro2"></span>
+                <span class="slider_electro" id="slider_electro3"></span>
+                <span class="slider_electro" id="slider_electro4"></span>
+                <span class="slider_electro" id="slider_electro5"></span>
+                <span class="slider_electro" id="slider_electro6"></span>
+                <span class="slider_electro" id="slider_electro7"></span>
+        
+                <div class="imgContainer_electro">
+                    <div class="slide_div_electro" id="slide_electro1">
+                        <img src="./gallery/electro.jpg" alt="" class="img_electro" id="img_electro1">
+                        <a href="#slider_electro1" class="button_electro" id="button_electro1"></a>
+                    </div>
+        
+                    <div class="slide_div_electro" id="slide_electro2">
+                        <img src="./gallery/electro1.jpg" alt="" class="img_electro" id="img_electro2">
+                        <a href="#slider_electro2" class="button_electro" id="button_electro2"></a>
+                    </div>
+        
+                    <div class="slide_div_electro" id="slide_electro3">
+                        <img src="./gallery/electro2.jpg" alt="" class="img_electro" id="img_electro3">
+                        <a href="#slider_electro3" class="button_electro" id="button_electro3"></a>
+                    </div>
+        
+                    <div class="slide_div_electro" id="slide_electro4">
+                        <img src="./gallery/electro3.jpeg" alt="" class="img_electro" id="img_electro4">
+                        <a href="#slider_electro4" class="button_electro" id="button_electro4"></a>
+                    </div>
+        
+                    <div class="slide_div_electro" id="slide_electro5">
+                        <img src="./gallery/electro4.jpeg" alt="" class="img_electro" id="img_electro5">
+                        <a href="#slider_electro5" class="button_electro" id="button_electro5"></a>
+                    </div>
+        
+                    <div class="slide_div_electro" id="slide_electro6">
+                        <img src="./gallery/electro5.webp" alt="" class="img_electro" id="img_electro6">
+                        <a href="#slider_electro6" class="button_electro" id="button_electro6"></a>
+                    </div>
+        
+                    <div class="slide_div_electro" id="slide_electro7">
+                        <img src="./gallery/electro6.jpg" alt="" class="img_electro" id="img_electro7">
+                        <a href="#slider_electro7" class="button_electro" id="button_electro7"></a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+
+
+        
+        <div class="waves">
+            <div class="wave" id="wave1">
+                <div class="wave" id="wave2">
+                    <div class="wave" id="wave3">
+                        <div class="wave" id="wave4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="Footer">
+            <footer>
+                <ul class="menu_link">
+                    <h4>Link utili</h4>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#About">About us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="FaQ.html">FaQ</a></li>
+                </ul>
+        
+                <div>
+                    <ul class="menu_contact" id="Contact">
+                        <h4>Contact</h4>
+                        <li> <b>Email:</b> supporto@movidavincente.com</li>
+                        <li><b>Telefono:</b> 388 345 6789</li>
+                    </ul>
+
+                    <ul class="menu_info" id="informative">
+                        <li> <a href="#informative">Informativa sulla Privacy</a> | <a href="#informative">Termini di
+                                Servizio</a></li>
+                        <li> <a href="#informative">Informativa sui Cookie</a> | <a href="#informative">Mappa del Sito</a>
+                        </li>
+                        <br>
+                        <li>© 2023 Movida Vincente | Tutti i diritti riservati.</li>
+                    </ul>
+                </div>
+        
+                <div class="map_box">
+                    <h4>Palazzo dello sport</h4>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.1396933373003!2d12.461964376272908!3d41.825290005189366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258b197a240f97%3A0x30f442fc92748581!2sPalazzo%20dello%20Sport%20-%20Roma!5e0!3m2!1sit!2sit!4v1700398327923!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+                <div class="map_box">
+                    <h4>Teatro</h4>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.323728880046!2d12.472261775030029!3d41.92889456223393!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f60dd1242b2db%3A0x32e262ed650274c0!2sAuditorium%20Parco%20della%20Musica!5e0!3m2!1sit!2sit!4v1700502885079!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </footer>
+        </section>
+        
+        
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
