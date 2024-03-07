@@ -79,6 +79,14 @@ header {
     color: #1c1c1c;         /* cambia il colore della scritta Login */
 }
 
+#selectLingue {
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
 /*----Gallery-----*/
 .home {
     margin-top: -16vh;
