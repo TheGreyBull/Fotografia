@@ -217,7 +217,7 @@ header {
 
 /*----- Gallery -----*/ 
 
-.typemusic {
+.typemusic{
     margin-top: 2vh;
     padding-top: 3vh;
     padding-left: 1vw;
@@ -229,7 +229,7 @@ header {
     background-clip: text;
 }
 
-.container_pop, .container_latin, .container_electro, .container_classic {
+.container_pop{
     width: 100%;
     height:100vh;
     display: row;
@@ -238,7 +238,7 @@ header {
     background-color: #1c1c1c;
 }
 
-.imgContainer_pop, .imgContainer_latin, .imgContainer_electro, .imgContainer_classic {
+.imgContainer_pop{
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -249,14 +249,14 @@ header {
     transition: 1s;
 }
 
-.slide_div_pop, .slide_div_latin, .slide_div_electro, .slide_div_classic {
+.slide_div_pop{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 30px;
 }
 
-.img_pop, .img_latin, .img_electro, .img_classic {
+.img_pop{
     position: relative;
     width: 25vw;
     height: 65vh;
@@ -265,7 +265,7 @@ header {
     border-radius: 20px;
 }
 
-.button_pop, .button_latin, .button_electro, .button_classic {
+.button_pop{
     position: absolute;
     width: 25vw;
     height: 65vh;
@@ -273,7 +273,7 @@ header {
     border-radius: 20px;
 }
 
-.button_pop:hover, .button_latin:hover, .button_electro:hover, .button_classic:hover {
+.button_pop:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -303,98 +303,6 @@ header {
 #slider_pop5:target ~ .imgContainer_pop {left: -20%;}
 #slider_pop6:target ~ .imgContainer_pop {left: -40%;}
 #slider_pop7:target ~ .imgContainer_pop {left: -60%;} 
-
-
-/*classic*/
-
-#slider_classic1:target ~ .imgContainer_classic #img_classic1,
-#slider_classic1:target ~ .imgContainer_classic #button_classic1,
-#slider_classic2:target ~ .imgContainer_classic #img_classic2,
-#slider_classic2:target ~ .imgContainer_classic #button_classic2,
-#slider_classic3:target ~ .imgContainer_classic #img_classic3,
-#slider_classic3:target ~ .imgContainer_classic #button_classic3,
-#slider_classic4:target ~ .imgContainer_classic #img_classic4,
-#slider_classic4:target ~ .imgContainer_classic #button_classic4,
-#slider_classic5:target ~ .imgContainer_classic #img_classic5,
-#slider_classic5:target ~ .imgContainer_classic #button_classic5,
-#slider_classic6:target ~ .imgContainer_classic #img_classic6,
-#slider_classic6:target ~ .imgContainer_classic #button_classic6,
-#slider_classic7:target ~ .imgContainer_classic #img_classic7,
-#slider_classic7:target ~ .imgContainer_classic #button_classic7 {
-    transform: scale(1.3);
-    background-color: transparent;
-    filter: saturate(100%);
-}
-
-#slider_classic1:target ~ .imgContainer_classic {left: 60%;}
-#slider_classic2:target ~ .imgContainer_classic {left: 40%;}
-#slider_classic3:target ~ .imgContainer_classic {left: 20%;}
-#slider_classic4:target ~ .imgContainer_classic {left: 0%;}
-#slider_classic5:target ~ .imgContainer_classic {left: -20%;}
-#slider_classic6:target ~ .imgContainer_classic {left: -40%;}
-#slider_classic7:target ~ .imgContainer_classic {left: -60%;}
-
-
-/*latin*/
-
-#slider_latin1:target ~ .imgContainer_latin #img_latin1,
-#slider_latin1:target ~ .imgContainer_latin #button_latin1,
-#slider_latin2:target ~ .imgContainer_latin #img_latin2,
-#slider_latin2:target ~ .imgContainer_latin #button_latin2,
-#slider_latin3:target ~ .imgContainer_latin #img_latin3,
-#slider_latin3:target ~ .imgContainer_latin #button_latin3,
-#slider_latin4:target ~ .imgContainer_latin #img_latin4,
-#slider_latin4:target ~ .imgContainer_latin #button_latin4,
-#slider_latin5:target ~ .imgContainer_latin #img_latin5,
-#slider_latin5:target ~ .imgContainer_latin #button_latin5,
-#slider_latin6:target ~ .imgContainer_latin #img_latin6,
-#slider_latin6:target ~ .imgContainer_latin #button_latin6,
-#slider_latin7:target ~ .imgContainer_latin #img_latin7,
-#slider_latin7:target ~ .imgContainer_latin #button_latin7 {
-    transform: scale(1.3);
-    background-color: transparent;
-    filter: saturate(100%);
-}
-
-#slider_latin1:target ~ .imgContainer_latin {left: 60%;}
-#slider_latin2:target ~ .imgContainer_latin {left: 40%;}
-#slider_latin3:target ~ .imgContainer_latin {left: 20%;}
-#slider_latin4:target ~ .imgContainer_latin {left: 0%;}
-#slider_latin5:target ~ .imgContainer_latin {left: -20%;}
-#slider_latin6:target ~ .imgContainer_latin {left: -40%;}
-#slider_latin7:target ~ .imgContainer_latin {left: -60%;}
-
-
-/*eletrronica*/
-
-#slider_electro1:target ~ .imgContainer_electro #img_electro1,
-#slider_electro1:target ~ .imgContainer_electro #button_electro1,
-#slider_electro2:target ~ .imgContainer_electro #img_electro2,
-#slider_electro2:target ~ .imgContainer_electro #button_electro2,
-#slider_electro3:target ~ .imgContainer_electro #img_electro3,
-#slider_electro3:target ~ .imgContainer_electro #button_electro3,
-#slider_electro4:target ~ .imgContainer_electro #img_electro4,
-#slider_electro4:target ~ .imgContainer_electro #button_electro4,
-#slider_electro5:target ~ .imgContainer_electro #img_electro5,
-#slider_electro5:target ~ .imgContainer_electro #button_electro5,
-#slider_electro6:target ~ .imgContainer_electro #img_electro6,
-#slider_electro6:target ~ .imgContainer_electro #button_electro6,
-#slider_electro7:target ~ .imgContainer_electro #img_electro7,
-#slider_electro7:target ~ .imgContainer_electro #button_electro7 {
-    transform: scale(1.3);
-    background-color: transparent;
-    filter: saturate(100%);
-}
-
-#slider_electro1:target ~ .imgContainer_electro {left: 60%;}
-#slider_electro2:target ~ .imgContainer_electro {left: 40%;}
-#slider_electro3:target ~ .imgContainer_electro {left: 20%;}
-#slider_electro4:target ~ .imgContainer_electro {left: 0%;}
-#slider_electro5:target ~ .imgContainer_electro {left: -20%;}
-#slider_electro6:target ~ .imgContainer_electro {left: -40%;}
-#slider_electro7:target ~ .imgContainer_electro {left: -60%;}
-
-
 
 /*----- Footer -----*/
 

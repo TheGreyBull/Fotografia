@@ -14,11 +14,18 @@
         <header>
             <img src="./immagini/logo.png" alt="" class="logo">
             <nav class="navigation">
-                <a id="info" href="index.html">Home</a>
-                <a id="infoattuale" href="#">Gallery</a>
-                <a id="info" href="#Contact">Contact</a>
-                <a id="info" href="FaQ.html">FaQ</a>
-                <a id="botton" href="login.html"><button class="btnLogin-popup">Login</button></a>
+                <a id="info" href="index_it.html">Home</a>
+                <a id="info" href="">Progetto</a>
+                <a id="infoattuale" href="#">Galleria</a>
+                <a id="info" href="">Backstage</a>
+                <select id="selectLingue" class="btnLogin-popup" onchange="location = this.value;">
+                    <option value="#" selected class="optionLang">IT</option>
+                    <option value="index_en.html" class="optionLang">EN</option>
+                    <option value="index_es.html" class="optionLang">ES</option>
+                    <option value="index_de.html" class="optionLang">DE</option>
+                    <option value="index_ch.html" class="optionLang">CH</option>
+                </select>
+                <!-- <a id="botton" href=""><button class="btnLogin-popup">Login</button></a> -->
             </nav>
         </header>
 
@@ -61,7 +68,6 @@
                 <div class="nav-btn"></div>
                 <div class="nav-btn"></div>
             </div>
-        
         </section>
 
         <script>
@@ -145,165 +151,8 @@
                         <a href="#slider_pop7" class="button_pop" id="button_pop7"></a>
                     </div>
                 </div>
-            </div>
-        
-                        
-        </div>
-        
-        <div id="Container_classic">
-            <h1 class="typemusic">Musica classica</h1>
-            <div class="container_classic">
-                <span class="slider_classic" id="slider_classic1"></span>
-                <span class="slider_classic" id="slider_classic2"></span>
-                <span class="slider_classic" id="slider_classic3"></span>
-                <span class="slider_classic" id="slider_classic4"></span>
-                <span class="slider_classic" id="slider_classic5"></span>
-                <span class="slider_classic" id="slider_classic6"></span>
-                <span class="slider_classic" id="slider_classic7"></span>
-        
-                <div class="imgContainer_classic" id="imgContainer_classic">
-                    <div class="slide_div_classic" id="slide_classic1">
-                        <img src="./gallery/classic.jpg" alt="" class="img_classic" id="img_classic1">
-                        <a href="#slider_classic1" class="button_classic" id="button_classic1"></a>
-                    </div>
-        
-                    <div class="slide_div_classic" id="slide_classic2">
-                        <img src="./gallery/classic1.jpg" alt="" class="img_classic" id="img_classic2">
-                        <a href="#slider_classic2" class="button_classic" id="button_classic2"></a>
-                    </div>
-        
-                    <div class="slide_div_classic" id="slide_classic3">
-                        <img src="./gallery/classic2.jpg" alt="" class="img_classic" id="img_classic3">
-                        <a href="#slider_classic3" class="button_classic" id="button_classic3"></a>
-                    </div>
-        
-                    <div class="slide_div_classic" id="slide_classic4">
-                        <img src="./gallery/classic3.jpeg" alt="" class="img_classic" id="img_classic4">
-                        <a href="#slider_classic4" class="button_classic" id="button_classic4"></a>
-                    </div>
-        
-                    <div class="slide_div_classic" id="slide_classic5">
-                        <img src="./gallery/classic4.webp" alt="" class="img_classic" id="img_classic5">
-                        <a href="#slider_classic5" class="button_classic" id="button_classic5"></a>
-                    </div>
-        
-                    <div class="slide_div_classic" id="slide_classic6">
-                        <img src="./gallery/classic5.jpg" alt="" class="img_classic" id="img_classic6">
-                        <a href="#slider_classic6" class="button_classic" id="button_classic6"></a>
-                    </div>
-        
-                    <div class="slide_div_classic" id="slide_classic7">
-                        <img src="./gallery/classic6.jpg" alt="" class="img_classic" id="img_classic7">
-                        <a href="#slider_classic7" class="button_classic" id="button_classic7"></a>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-        <div id="Container_latin">
-            <h1 class="typemusic">Musica latina</h1>
-            <div class="container_latin">
-                <span class="slider_latin" id="slider_latin1"></span>
-                <span class="slider_latin" id="slider_latin2"></span>
-                <span class="slider_latin" id="slider_latin3"></span>
-                <span class="slider_latin" id="slider_latin4"></span>
-                <span class="slider_latin" id="slider_latin5"></span>
-                <span class="slider_latin" id="slider_latin6"></span>
-                <span class="slider_latin" id="slider_latin7"></span>
-        
-                <div class="imgContainer_latin" id="imgContainer_latin">
-                    <div class="slide_div_latin" id="slide_latin1">
-                        <img src="./gallery/latin0.jpeg" alt="" class="img_latin" id="img_latin1">
-                        <a href="#slider_latin1" class="button_latin" id="button_latin1"></a>
-                    </div>
-        
-                    <div class="slide_div_latin" id="slide_latin2">
-                        <img src="./gallery/latin1.jpg" alt="" class="img_latin" id="img_latin2">
-                        <a href="#slider_latin2" class="button_latin" id="button_latin2"></a>
-                    </div>
-        
-                    <div class="slide_div_latin" id="slide_latin3">
-                        <img src="./gallery/latin2.jpeg" alt="" class="img_latin" id="img_latin3">
-                        <a href="#slider_latin3" class="button_latin" id="button_latin3"></a>
-                    </div>
-        
-                    <div class="slide_div_latin" id="slide_latin4">
-                        <img src="./gallery/latin3.jpg" alt="" class="img_latin" id="img_latin4">
-                        <a href="#slider_latin4" class="button_latin" id="button_latin4"></a>
-                    </div>
-        
-                    <div class="slide_div_latin" id="slide_latin5">
-                        <img src="./gallery/latin4.jpg" alt="" class="img_latin" id="img_latin5">
-                        <a href="#slider_latin5" class="button_latin" id="button_latin5"></a>
-                    </div>
-        
-                    <div class="slide_div_latin" id="slide_latin6">
-                        <img src="./gallery/latin5.jpg" alt="" class="img_latin" id="img_latin6">
-                        <a href="#slider_latin6" class="button_latin" id="button_latin6"></a>
-                    </div>
-        
-                    <div class="slide_div_latin" id="slide_latin7">
-                        <img src="./gallery/latin6.webp" alt="" class="img_latin" id="img_latin7">
-                        <a href="#slider_latin7" class="button_latin" id="button_latin7"></a>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-        <div id="Container_electro">
-            <h1 class="typemusic">Musica elettronica</h1>
-            <div class="container_electro" id="imgContainer_electro">
-                <span class="slider_electro" id="slider_electro1"></span>
-                <span class="slider_electro" id="slider_electro2"></span>
-                <span class="slider_electro" id="slider_electro3"></span>
-                <span class="slider_electro" id="slider_electro4"></span>
-                <span class="slider_electro" id="slider_electro5"></span>
-                <span class="slider_electro" id="slider_electro6"></span>
-                <span class="slider_electro" id="slider_electro7"></span>
-        
-                <div class="imgContainer_electro">
-                    <div class="slide_div_electro" id="slide_electro1">
-                        <img src="./gallery/electro.jpg" alt="" class="img_electro" id="img_electro1">
-                        <a href="#slider_electro1" class="button_electro" id="button_electro1"></a>
-                    </div>
-        
-                    <div class="slide_div_electro" id="slide_electro2">
-                        <img src="./gallery/electro1.jpg" alt="" class="img_electro" id="img_electro2">
-                        <a href="#slider_electro2" class="button_electro" id="button_electro2"></a>
-                    </div>
-        
-                    <div class="slide_div_electro" id="slide_electro3">
-                        <img src="./gallery/electro2.jpg" alt="" class="img_electro" id="img_electro3">
-                        <a href="#slider_electro3" class="button_electro" id="button_electro3"></a>
-                    </div>
-        
-                    <div class="slide_div_electro" id="slide_electro4">
-                        <img src="./gallery/electro3.jpeg" alt="" class="img_electro" id="img_electro4">
-                        <a href="#slider_electro4" class="button_electro" id="button_electro4"></a>
-                    </div>
-        
-                    <div class="slide_div_electro" id="slide_electro5">
-                        <img src="./gallery/electro4.jpeg" alt="" class="img_electro" id="img_electro5">
-                        <a href="#slider_electro5" class="button_electro" id="button_electro5"></a>
-                    </div>
-        
-                    <div class="slide_div_electro" id="slide_electro6">
-                        <img src="./gallery/electro5.webp" alt="" class="img_electro" id="img_electro6">
-                        <a href="#slider_electro6" class="button_electro" id="button_electro6"></a>
-                    </div>
-        
-                    <div class="slide_div_electro" id="slide_electro7">
-                        <img src="./gallery/electro6.jpg" alt="" class="img_electro" id="img_electro7">
-                        <a href="#slider_electro7" class="button_electro" id="button_electro7"></a>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-        
-
+            </div>          
+        </div> 
 
         
         <div class="waves">
