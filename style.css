@@ -88,7 +88,7 @@ header {
     text-overflow: '';
 }
 
-option {
+#optionLang {
     background-color: #ddc962;
     color: #1c1c1c;
 }
