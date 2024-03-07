@@ -81,8 +81,14 @@ header {
 }
 
 #selectLingue {
+    text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
+}
+
+option {
+    background-color: #ddc962;
+    color: #1c1c1c;
 }
