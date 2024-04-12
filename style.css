@@ -27,6 +27,7 @@ header {
     width: 15vw;
     height: 15vh;
     user-select: none;  /* non si può selezionare il logo */
+    border: 2px solid black;
 }
 
 #info, #infoattuale {
@@ -57,8 +58,6 @@ header {
     transform-origin: left; /* così che la line appaia da sinistra*/
     transform: scaleX(1); 
 }
-
-
 
 .navigation .btnLogin-popup {
     width: 8.5vw;
@@ -91,4 +90,8 @@ header {
 .optionLang {
     background-color: #ddc962;
     color: #1c1c1c;
+}
+
+.optionLang:hover {
+    background-color: red;
 }

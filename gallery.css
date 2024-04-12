@@ -28,6 +28,7 @@ header {
     width: 15vw;
     height: 15vh;
     user-select: none;  /* non si può selezionare il logo */
+    border: 2px solid black;
 }
 
 #info, #infoattuale {
@@ -129,7 +130,7 @@ header {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.5vw;
-    line-height: 12vh;
+    line-height: 11vh;
     margin-bottom: 4vh;
 }
 
