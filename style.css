@@ -95,3 +95,8 @@ header {
 .optionLang:hover {
     background-color: red;
 }
+
+#mainTitle {
+    font-size: 80px;
+    font-weight: 900;
+}
