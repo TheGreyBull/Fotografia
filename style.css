@@ -95,3 +95,66 @@ header {
 .optionLang:hover {
     background-color: red;
 }
+
+
+.home{
+
+}
+
+#mainTitle {
+    font-size: 80px;
+    font-weight: 900;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    animation: animateWave 2.5s linear infinite;
+    --mask:
+        radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(60% - 186px) 0/372px 80%,
+        radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 60% 93px/372px 80% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+
+  @keyframes animateWave {
+    0% {
+        --mask:
+        radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(60% - 186px) 0/372px 100%,
+        radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 60% 93px/372px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);   
+    }
+    25%
+    {
+        --mask:
+        radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(65% - 186px) 0/372px 100%,
+        radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 65% 93px/372px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+    }
+    50%
+    {
+        --mask:
+        radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(70% - 186px) 0/372px 100%,
+        radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 70% 93px/372px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+    }
+    75%
+    {
+        --mask:
+        radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(75% - 186px) 0/372px 100%,
+        radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 75% 93px/372px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+    }
+    100% {
+        --mask:
+        radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(80% - 186px) 0/372px 100%,
+        radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 80% 93px/372px 100% repeat-x;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+    }
+}
