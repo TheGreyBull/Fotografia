@@ -23,13 +23,6 @@ header {
     background: #1c1c1cA1;
 }
 
-.logo {
-    width: 15vw;
-    height: 15vh;
-    user-select: none;  /* non si può selezionare il logo */
-    border: 2px solid black;
-}
-
 #info, #infoattuale {
     position: relative;
     font-size: 3vh;
@@ -58,6 +51,11 @@ header {
     transform-origin: left; /* così che la line appaia da sinistra*/
     transform: scaleX(1); 
 }
+
+.navigation{
+    margin-left: 20 vw;
+}
+
 
 .navigation .btnLogin-popup {
     width: 8.5vw;
@@ -98,17 +96,20 @@ header {
 
 
 .home{
-
+    width: 100vw;
 }
 
 #mainTitle {
     font-size: 80px;
     font-weight: 900;
+    color: #fff;
 }
 
+
+/* footer da sistemare */
 .box {
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
     background-color: blueviolet;
     animation: animateWave 2.5s linear infinite;
     --mask:
