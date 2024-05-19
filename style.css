@@ -7,18 +7,17 @@
 
 body {
     background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
 }
 
 /*----- Header -----*/
 header {
     position: fixed;    /* l'header rimane fisso */
-    top: 0;
+    top: 10px;
     left: 0;
     width: 100vw;
     padding: 4px 80px;    /*top e bottom paddings sono 20px, right e left sono 100px*/
-    display: flex;
-    justify-content: space-between; /*altrimenti le scritte verrebbero storte*/
-    align-items: center;
     z-index: 99;
     background: #1c1c1cA1;
 }
@@ -53,7 +52,12 @@ header {
 }
 
 .navigation{
-    margin-left: 20 vw;
+    display: flex;
+    justify-content: space-between; /*altrimenti le scritte verrebbero storte*/
+    align-items: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -90,13 +94,10 @@ header {
     color: #1c1c1c;
 }
 
-.optionLang:hover {
-    background-color: red;
-}
-
-
-.home{
-    width: 100vw;
+.home {
+    height: 40vh;
+    margin-top: 10vh;
+    margin-left: 40px;
 }
 
 #mainTitle {
@@ -109,53 +110,72 @@ header {
 /* footer da sistemare */
 .box {
     width: 100vw;
-    height: 50vh;
-    background-color: blueviolet;
+    height: 25vh;
+    background-color: rgb(30, 8, 52);
     animation: animateWave 2.5s linear infinite;
     --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(60% - 186px) 0/372px 80%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 60% 93px/372px 80% repeat-x;
     -webkit-mask: var(--mask);
             mask: var(--mask);
-  }
+}
 
-  @keyframes animateWave {
+@keyframes animateWave {
     0% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(60% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 60% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);   
+        -webkit-mask: var(--mask);
+                mask: var(--mask);   
     }
-    25%
-    {
+    25% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(65% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 65% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
-    50%
-    {
+    50% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(70% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 70% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
-    75%
-    {
+    75% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(75% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 75% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
     100% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(80% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 80% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(30, 8, 52);
+    padding: 20px 50px;
+    flex-direction: row;
+    color: white;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+li {
+    font-size: 25px;
 }
