@@ -14,7 +14,7 @@ body {
 /*----- Header -----*/
 header {
     position: fixed;    /* l'header rimane fisso */
-    top: 10px;
+    /* top: 10px; */
     left: 0;
     width: 100vw;
     padding: 4px 80px;    /*top e bottom paddings sono 20px, right e left sono 100px*/
@@ -96,7 +96,7 @@ header {
 
 .home {
     height: 40vh;
-    margin-top: 10vh;
+    margin-top: 20vh;
     margin-left: 40px;
 }
 
@@ -109,7 +109,7 @@ header {
 
 /* footer da sistemare */
 .box {
-    width: 100vw;
+    width: 98vw;
     height: 25vh;
     background-color: rgb(30, 8, 52);
     animation: animateWave 2.5s linear infinite;
