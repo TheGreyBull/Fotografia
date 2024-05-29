@@ -3,24 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Percorso di fotografia</title>
+    <title>Home - Percorso di fotografia</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         
     </style>
 </head>
 <body>
-    <nav>
-        <a href="">Home</a>
-        <a href="progetto.html">Progetto</a>
-        <a href="galleria.html">Galleria</a>
-        <a href="backstage.html">Backstage</a>
-        <a href="">IT</a>
-    </nav>
+    <header>
+        <nav>
+            <a id="infoattuale" href="#">Home</a>
+            <a class="info" href="progetto.html">Progetto</a>
+            <a class="info" href="galleria.html">Galleria</a>
+            <a class="info" href="">Backstage</a>
+            <select id="selectLingue" class="btnLogin-popup" onchange="location = this.value;">
+                <option value="#" selected class="optionLang">IT</option>
+                <option value="index_en.html" class="optionLang">EN</option>
+                <option value="index_es.html" class="optionLang">ES</option>
+                <option value="index_de.html" class="optionLang">DE</option>
+                <option value="index_ch.html" class="optionLang">CH</option>
+            </select>
+        </nav>
+    </header>
 
-    <h1>SintonizziAMOci: alta "FREQUENZA" al Marconi M4C1I1.4-2022-981-P-21407</h1>
-    <hr>
+    <h3>Progetto:</h3>
+    <h1 style="font-size: 25px;">SintonizziAMOci: alta "FREQUENZA" al Marconi M4C1I1.4-2022-981-P-21407</h1>
     <h1>Contrasti nella quotidianità</h1>
+    <hr>
     <br>
     <h2>Una breve storia della fotografia</h2>
     <p>
@@ -44,15 +53,13 @@
 
     <br>
 
-
-
     <footer>
         <hr>
         <h1>Partecipanti al progetto:</h1>
         <ul>
             <li>Docente referente: Gesini Patrizia</li>
             <li>Sviluppo sito web: TheGreyBull, FaffiFaffi</li>
-            <li>Classi: 5F INF, 4C INF, 4D INF, 3A INF, bo...</li>
+            <li>Classi: 5F INF, 4C INF, 4D INF, 3A INF</li>
         </ul>
         <h1>Marconi Latina</h1>
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
