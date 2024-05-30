@@ -5,21 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il progetto - Percorso di fotografia</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #firstdiv {
+            margin-top: 80px;
+            padding-bottom: 150px;
+        }
+
+        h1 {
+            padding: 20px;
+            font-size: 30px;
+        }
+
+        p {
+            padding-top: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        img {
+            padding-top: 120px;
+            padding-left: 40px;
+        }
+
+        #spacediv {
+            height: 30vh;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="">Progetto</a>
-        <a href="galleria.html">Galleria</a>
-        <a href="backstage.html">Backstage</a>
-        <a href="">IT</a>
-    </nav>
+    <header>
+        <a class="info" href="index.html">Home</a>
+        <a id="infoattuale" href="#">Progetto</a>
+        <a class="info" href="galleria.html">Galleria</a>
+        <a class="info" href="">Backstage</a>
+        <select id="selectLingue" class="btnLogin-popup" onchange="location = this.value;">
+            <option value="#" selected class="optionLang">IT</option>
+            <option value="index_en.html" class="optionLang">EN</option>
+            <option value="index_es.html" class="optionLang">ES</option>
+            <option value="index_de.html" class="optionLang">DE</option>
+            <option value="index_ch.html" class="optionLang">CH</option>
+        </select>
+    </header>
 
-    <h1>Chi siamo</h1>
-    <p>
-        Cras rutrum placerat diam at iaculis. Sed elit neque, pulvinar a sagittis in, suscipit a diam. Quisque vel elementum justo, non vulputate enim. Curabitur id ligula et tellus aliquet sodales id eu elit. Integer pulvinar a justo ac euismod. Nunc quis ex est. Vivamus mattis tortor diam, sed finibus dolor efficitur tempus. Morbi cursus nisl nec arcu gravida porttitor. Vivamus varius a mi at dapibus. Duis nec magna id ante fringilla tempor. Integer nec massa risus. Ut lorem lorem, pretium in tristique eget, porttitor non lorem. Nunc lobortis purus urna, vel posuere enim hendrerit ut. Curabitur consequat est nec metus consequat, quis mattis odio facilisis. Cras consectetur auctor eleifend.
-        Morbi at ornare est. Pellentesque vehicula at tortor ac euismod. Duis non erat eleifend, porta diam vel, eleifend libero. In ultricies turpis at porta sodales. Donec at mi accumsan, porttitor nisi a, pharetra quam. Aliquam vel aliquam nulla, non aliquet ipsum. Vestibulum cursus fermentum porta.
-    </p>
+    <div id="firstdiv">
+        <h1>Chi siamo</h1>
+        <p>
+            Cras rutrum placerat diam at iaculis. Sed elit neque, pulvinar a sagittis in, suscipit a diam. Quisque vel elementum justo, non vulputate enim. Curabitur id ligula et tellus aliquet sodales id eu elit. Integer pulvinar a justo ac euismod. Nunc quis ex est. Vivamus mattis tortor diam, sed finibus dolor efficitur tempus. Morbi cursus nisl nec arcu gravida porttitor. Vivamus varius a mi at dapibus. Duis nec magna id ante fringilla tempor. Integer nec massa risus. Ut lorem lorem, pretium in tristique eget, porttitor non lorem. Nunc lobortis purus urna, vel posuere enim hendrerit ut. Curabitur consequat est nec metus consequat, quis mattis odio facilisis. Cras consectetur auctor eleifend.
+            Morbi at ornare est. Pellentesque vehicula at tortor ac euismod. Duis non erat eleifend, porta diam vel, eleifend libero. In ultricies turpis at porta sodales. Donec at mi accumsan, porttitor nisi a, pharetra quam. Aliquam vel aliquam nulla, non aliquet ipsum. Vestibulum cursus fermentum porta.
+        </p>
+
+        <img src="#" alt="foto1">
+    </div>
     
     <br>
 
@@ -29,7 +65,25 @@
         Fusce ex urna, consectetur at arcu tristique, mollis ullamcorper ante. Suspendisse pulvinar sem nec ultricies sodales. Ut pretium interdum lacus quis tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pellentesque libero eget nisi ornare consectetur. Vivamus suscipit, lectus sit amet accumsan auctor, odio eros fringilla nulla, in tempor nibh sem eu dolor. Quisque et massa orci. Morbi et nunc id justo egestas egestas ac quis sapien. Donec diam lacus, imperdiet sed risus eget, rhoncus luctus elit.
     </p>
 
-    <br>
+    <div id="spacediv"></div>
     
+    <!-- div con l'effetto dell'onda -->
+    <div class="box"></div>
+
+    <footer>
+        <div id="footerleft">
+            <h1>Partecipanti al progetto:</h1>
+            <ul style="padding-top: 50px;">
+                <li>Docente referente: Gesini Patrizia</li>
+                <li>Sviluppo sito web: TheGreyBull, FaffiFaffi</li>
+                <li>Classi: 5F INF, 4C INF, 4D INF, 3A INF</li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <h1>La nostra scuola:<br>G. Marconi Latina</h1>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <div id="afterfooter"></div>
 </body>
 </html>
