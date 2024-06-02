@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galleria - Percorso di fotografia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #firstdiv {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="progetto.html">Progetto</a>
-        <a href="">Galleria</a>
-        <a href="backstage.html">Backstage</a>
-        <a href="">IT</a>
-    </nav>
+    <header>
+        <a class="info" href="index.html">Home</a>
+        <a class="info" href="progetto.html">Progetto</a>
+        <a id="infoattuale" href="#">Galleria</a>
+        <a class="info" href="">Backstage</a>
+        <select
+        id="selectLingue"
+        class="btnLogin-popup"
+        onchange="location = this.value;"
+        >
+            <option value="#" selected class="optionLang">IT</option>
+            <option value="index_en.html" class="optionLang">EN</option>
+            <option value="index_es.html" class="optionLang">ES</option>
+            <option value="index_de.html" class="optionLang">DE</option>
+            <option value="index_ch.html" class="optionLang">CH</option>
+        </select>
+    </header>
 
-    <h1>Abbiamo affrontato le seguenti tecniche:</h1>
-    <ul>
-        <li>La composizione e la luce (la regola dei terzi, ritratto, posing, direzione soggetto, piano americano, effetto sfocato, boken)</li>
-        <li>Tecnica dello still life</li>
-        <li>Tecnica del panning</li>
-        <li>Tecnica del light painting</li>
-        <li>Tecnica del paesaggio</li>
-        <li>Tecnica del motion blur (contrario panning)</li>
-        <li>Foto editing</li>
-        <li>I fiori della scuola</li>
-    </ul>
+    <div id="firstdiv">
+        <h1>Abbiamo affrontato le seguenti tecniche:</h1>
+        <ul>
+            <li>La composizione e la luce (la regola dei terzi, ritratto, posing, direzione soggetto, piano americano, effetto sfocato, boken)</li>
+            <li>Tecnica dello still life</li>
+            <li>Tecnica del panning</li>
+            <li>Tecnica del light painting</li>
+            <li>Tecnica del paesaggio</li>
+            <li>Tecnica del motion blur (contrario panning)</li>
+            <li>Foto editing</li>
+        </ul>
+    </div>
+
+    <div>
+        
+    </div>
 </body>
 </html>

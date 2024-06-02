@@ -16,10 +16,6 @@
             font-size: 30px;
         }
 
-        #spacediv {
-            height: 30vh;
-        }
-
         img {
             margin-top: 100px;
             margin-left: 40px;
@@ -35,7 +31,11 @@
         <a id="infoattuale" href="#">Progetto</a>
         <a class="info" href="galleria.html">Galleria</a>
         <a class="info" href="">Backstage</a>
-        <select id="selectLingue" class="btnLogin-popup" onchange="location = this.value;">
+        <select
+        id="selectLingue"
+        class="btnLogin-popup"
+        onchange="location = this.value;"
+        >
             <option value="#" selected class="optionLang">IT</option>
             <option value="index_en.html" class="optionLang">EN</option>
             <option value="index_es.html" class="optionLang">ES</option>
@@ -61,8 +61,6 @@
         Donec eget elit pretium orci lacinia accumsan non sit amet dui. Nunc ut sapien lacus. Pellentesque in elit sit amet libero pellentesque tristique eget in erat. Nulla ut felis magna. Curabitur vitae aliquet felis. Morbi cursus lorem porttitor varius laoreet. Nulla dictum efficitur nibh, non efficitur sem pulvinar non.
         Fusce ex urna, consectetur at arcu tristique, mollis ullamcorper ante. Suspendisse pulvinar sem nec ultricies sodales. Ut pretium interdum lacus quis tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pellentesque libero eget nisi ornare consectetur. Vivamus suscipit, lectus sit amet accumsan auctor, odio eros fringilla nulla, in tempor nibh sem eu dolor. Quisque et massa orci. Morbi et nunc id justo egestas egestas ac quis sapien. Donec diam lacus, imperdiet sed risus eget, rhoncus luctus elit.
     </p>
-
-    <div id="spacediv"></div>
     
     <!-- div con l'effetto dell'onda -->
     <div class="onda">
@@ -96,15 +94,28 @@
     <footer>
         <div id="footerleft">
             <h1>Partecipanti al progetto:</h1>
-            <ul style="padding-top: 50px;">
-                <li>Docente referente: Gesini Patrizia</li>
-                <li>Sviluppo sito web: TheGreyBull, FaffiFaffi</li>
-                <li>Classi: 5F INF, 4C INF, 4D INF, 3A INF</li>
+            <ul style="padding-top: 50px">
+                <li>
+                    Docente referente: <i><b>Gesini Patrizia</b></i>
+                </li>
+                <li>
+                    Sviluppo sito web: <i><b>TheGreyBull, FaffiFaffi</b></i>
+                </li>
+                <li>
+                    Classi: <i><b>5F INF, 4C INF, 4D INF, 3A INF</b></i>
+                </li>
             </ul>
         </div>
         <div id="footerright">
-            <h1>La nostra scuola:<br>G. Marconi Latina</h1>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h1>La nostra scuola:<br />G. Marconi Latina</h1>
+            <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
         </div>
     </footer>
     <div id="afterfooter"></div>

@@ -60,6 +60,7 @@ a, a:active, a:hover, a:focus {
 body {
     background-color: #1c1c1c;
     color: white;
+    overflow-x: hidden;
 }
 
 select {
@@ -115,6 +116,10 @@ footer {
     -webkit-mask: var(--mask);
             mask: var(--mask);
 } */
+
+#footerleft {
+    width: 50%;
+}
 
 #footerleft > h1, #footerright > h1 {
     text-align: left;
@@ -193,5 +198,5 @@ p {
 }
 
 svg {
-    margin-top: -550px;
+    margin-top: -660px;
 }
