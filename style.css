@@ -9,6 +9,8 @@ body {
     background-color: #1c1c1c;
     display: flex;
     flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 /*----- Header -----*/
@@ -52,6 +54,12 @@ header {
 }
 
 .navigation{
+    display: flex;
+    justify-content: space-between; /*altrimenti le scritte verrebbero storte*/
+    align-items: center;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between; /*altrimenti le scritte verrebbero storte*/
     align-items: center;
@@ -119,7 +127,9 @@ header {
     -webkit-mask: var(--mask);
             mask: var(--mask);
 }
+}
 
+@keyframes animateWave {
 @keyframes animateWave {
     0% {
         --mask:
@@ -127,25 +137,36 @@ header {
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 60% 93px/372px 100% repeat-x;
         -webkit-mask: var(--mask);
                 mask: var(--mask);   
+        -webkit-mask: var(--mask);
+                mask: var(--mask);   
     }
+    25% {
     25% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(65% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 65% 93px/372px 100% repeat-x;
         -webkit-mask: var(--mask);
                 mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
+    50% {
     50% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(70% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 70% 93px/372px 100% repeat-x;
         -webkit-mask: var(--mask);
                 mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
+    75% {
     75% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(75% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 75% 93px/372px 100% repeat-x;
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
         -webkit-mask: var(--mask);
                 mask: var(--mask);
     }
@@ -155,7 +176,31 @@ header {
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 80% 93px/372px 100% repeat-x;
         -webkit-mask: var(--mask);
                 mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(30, 8, 52);
+    padding: 20px 50px;
+    flex-direction: row;
+    color: white;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+li {
+    font-size: 25px;
 }
 
 footer {

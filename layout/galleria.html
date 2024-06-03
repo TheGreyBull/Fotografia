@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galleria - Percorso di fotografia</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        #firstdiv {
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+
+        :root {
+            --imgHeight: 50vh;
+        }
+
+        * { /*selettore universale*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .container_pop{
+            width: 100%;
+            height: 100vh;
+            display: row;
+            align-items: center;
+            overflow: hidden;
+            background-color: #1c1c1c;
+        }
+
+        .imgContainer_pop{
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+
+        .slide_div_pop{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 30px;
+        }
+
+        .img_pop{
+            position: relative;
+            width: 25vw;
+            height: var(--imgHeight);
+            transition: 0.5s;
+            filter: saturate(10%);
+            border-radius: 20px;
+        }
+
+        .button_pop{
+            position: absolute;
+            width: 25vw;
+            height: var(--imgHeight);
+            transition: 0.5s;
+            border-radius: 20px;
+            z-index: 1;
+        }
+
+        .button_pop:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        #slider_pop1:target ~ .imgContainer_pop #img_pop1,
+        #slider_pop1:target ~ .imgContainer_pop #button_pop1,
+        #slider_pop2:target ~ .imgContainer_pop #img_pop2,
+        #slider_pop2:target ~ .imgContainer_pop #button_pop2,
+        #slider_pop3:target ~ .imgContainer_pop #img_pop3,
+        #slider_pop3:target ~ .imgContainer_pop #button_pop3,
+        #slider_pop4:target ~ .imgContainer_pop #img_pop4,
+        #slider_pop4:target ~ .imgContainer_pop #button_pop4,
+        #slider_pop5:target ~ .imgContainer_pop #img_pop5,
+        #slider_pop5:target ~ .imgContainer_pop #button_pop5,
+        #slider_pop6:target ~ .imgContainer_pop #img_pop6,
+        #slider_pop6:target ~ .imgContainer_pop #button_pop6,
+        #slider_pop7:target ~ .imgContainer_pop #img_pop7,
+        #slider_pop7:target ~ .imgContainer_pop #button_pop7,
+        #slider_pop8:target ~ .imgContainer_pop #img_pop8,
+        #slider_pop8:target ~ .imgContainer_pop #button_pop8,
+        #slider_pop9:target ~ .imgContainer_pop #img_pop9,
+        #slider_pop9:target ~ .imgContainer_pop #button_pop9 {
+            transform: scale(1.1);
+            background-color: transparent;
+            filter: saturate(100%);
+        }
+
+        #slider_pop1:target ~ .imgContainer_pop {left: 80%;}
+        #slider_pop2:target ~ .imgContainer_pop {left: 60%;}
+        #slider_pop3:target ~ .imgContainer_pop {left: 40%;}
+        #slider_pop4:target ~ .imgContainer_pop {left: 20%;}
+        #slider_pop5:target ~ .imgContainer_pop {left: 0%;}
+        #slider_pop6:target ~ .imgContainer_pop {left: -20%;}
+        #slider_pop7:target ~ .imgContainer_pop {left: -40%;}
+        #slider_pop8:target ~ .imgContainer_pop {left: -60%;}
+        #slider_pop9:target ~ .imgContainer_pop {left: -80%;}
+    </style>
+</head>
+<body>
+    <header>
+        <a class="info" href="index.html">Home</a>
+        <a class="info" href="progetto.html">Progetto</a>
+        <a id="infoattuale" href="#">Galleria</a>
+        <a class="info" href="">Backstage</a>
+        <select
+        id="selectLingue"
+        class="btnLogin-popup"
+        onchange="location = this.value;"
+        >
+            <option value="#" selected class="optionLang">IT</option>
+            <option value="index_en.html" class="optionLang">EN</option>
+            <option value="index_es.html" class="optionLang">ES</option>
+            <option value="index_de.html" class="optionLang">DE</option>
+            <option value="index_ch.html" class="optionLang">CH</option>
+        </select>
+    </header>
+
+    <div id="firstdiv">
+        <h1>Abbiamo affrontato le seguenti tecniche:</h1>
+        <ul>
+            <li>La composizione e la luce (la regola dei terzi, ritratto, posing, direzione soggetto, piano americano, effetto sfocato, boken)</li>
+            <li>Tecnica dello still life</li>
+            <li>Tecnica del panning</li>
+            <li>Tecnica del light painting</li>
+            <li>Tecnica del paesaggio</li>
+            <li>Tecnica del motion blur (contrario panning)</li>
+            <li>Foto editing</li>
+        </ul>
+    </div>
+
+    <div class="container_pop">
+        <span class="slider_pop" id="slider_pop1"></span>
+        <span class="slider_pop" id="slider_pop2"></span>
+        <span class="slider_pop" id="slider_pop3"></span>
+        <span class="slider_pop" id="slider_pop4"></span>
+        <span class="slider_pop" id="slider_pop5"></span>
+        <span class="slider_pop" id="slider_pop6"></span>
+        <span class="slider_pop" id="slider_pop7"></span>
+        <span class="slider_pop" id="slider_pop8"></span>
+        <span class="slider_pop" id="slider_pop9"></span>
+
+        <div class="imgContainer_pop" id="imgContainer_pop">
+            <div class="slide_div_pop">
+                <img src="../img/index_photo/alunno1.jpg" alt="" class="img_pop" id="img_pop1">
+                <a href="#slider_pop1" class="button_pop" id="button_pop1"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="../img/index_photo/alunno1.jpg" alt="" class="img_pop" id="img_pop2">
+                <a href="#slider_pop2" class="button_pop" id="button_pop2"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="../img/index_photo/alunno1.jpg" alt="" class="img_pop" id="img_pop3">
+                <a href="#slider_pop3" class="button_pop" id="button_pop3"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="../img/index_photo/alunno1.jpg" alt="" class="img_pop" id="img_pop4">
+                <a href="#slider_pop4" class="button_pop" id="button_pop4"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="../img/index_photo/alunno1.jpg" alt="" class="img_pop" id="img_pop5">
+                <a href="#slider_pop5" class="button_pop" id="button_pop5"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="./gallery/pop5.jpg" alt="" class="img_pop" id="img_pop6">
+                <a href="#slider_pop6" class="button_pop" id="button_pop6"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="./gallery/pop6.jpeg" alt="" class="img_pop" id="img_pop7">
+                <a href="#slider_pop7" class="button_pop" id="button_pop7"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="./gallery/pop6.jpeg" alt="" class="img_pop" id="img_pop8">
+                <a href="#slider_pop8" class="button_pop" id="button_pop8"></a>
+            </div>
+
+            <div class="slide_div_pop">
+                <img src="./gallery/pop6.jpeg" alt="" class="img_pop" id="img_pop9">
+                <a href="#slider_pop9" class="button_pop" id="button_pop9"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- div con l'effetto dell'onda -->
+    <div class="onda">
+        <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 1000 1000"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        overflow="auto"
+        shape-rendering="auto"
+        fill="#1c1c1c"
+        >
+        <defs>
+            <path
+            id="wavepath"
+            d="M 0 2000 0 500 Q 68 469 136 500 t 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0  v1000 z"
+            />
+            <path id="motionpath" d="M -272 0 0 0" />
+        </defs>
+        <g>
+            <use xlink:href="#wavepath" y="447" fill="#2f2f2f">
+                <animateMotion dur="5s" repeatCount="indefinite">
+                    <mpath xlink:href="#motionpath" />
+                </animateMotion>
+            </use>
+        </g>
+    </svg>
+    </div>
+
+    <footer>
+        <div id="footerleft">
+            <h1>Partecipanti al progetto:</h1>
+            <ul style="padding-top: 50px">
+                <li>
+                    Docente referente: <i><b>Gesini Patrizia</b></i>
+                </li>
+                <li>
+                    Sviluppo sito web: <i><b>TheGreyBull, FaffiFaffi</b></i>
+                </li>
+                <li>
+                    Classi: <i><b>5F INF, 4C INF, 4D INF, 3A INF</b></i>
+                </li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <h1>La nostra scuola:<br />G. Marconi Latina</h1>
+            <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </footer>
+    <div id="afterfooter"></div>
+</body>
+</html>
