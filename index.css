@@ -1,0 +1,58 @@
+#fotodiv {
+    margin-top: 20px;
+}
+
+/* Titoli */
+
+h1 {
+    font-size: 70px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: -20px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+/* Titoli e testi minori */
+
+h2 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+#firstelement {
+    height: 100vh;
+}
+
+#panoramicadiv {
+    width: 100%;
+    padding-top: 20vh;
+}
+
+#fotodiv, #camerascuradiv {
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 15vw;
+    height: 10vw;
+    border: 2px solid black;
+}
+
+#camerascuradiv {
+    margin-top: 10vh;
+    justify-content: space-around;
+}
+
+#camerascuradiv > img {
+    width: 30vw;
+    height: 20vw;
+}

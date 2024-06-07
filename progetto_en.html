@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The project - Photography Path</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="progetto.css">
+</head>
+<body>
+    <header>
+        <a class="info" href="index.html">Home</a>
+        <a id="infoattuale" href="#">Project</a>
+        <a class="info" href="galleria.html">Gallery</a>
+        <!-- <a class="info" href="http://dallasentadennis.altervista.org" style="color: #1c1c1c;">.</a> -->
+        <select
+        id="selectLingue"
+        class="btnLogin-popup"
+        onchange="location = this.value;"
+        >
+            <option value="progetto.html" selected class="optionLang">IT</option>
+            <option value="#" class="optionLang" selected>EN</option>
+            <option value="progetto_es.html" class="optionLang">ES</option>
+            <option value="progetto_de.html" class="optionLang">DE</option>
+            <option value="progetto_ch.html" class="optionLang">CH</option>
+        </select>
+    </header>
+
+    <div id="firstdiv">
+        <h1>About ourselves</h1>
+        <p>
+            We are a group of students who are approaching the world of photography, 
+            linked by the curiosity of exploring and capture everything around us by 
+            using our cameras. This website is the product of our commitment and 
+            creativity, and is developed as a part of the photography course organised 
+            by our school. In this site we will show our works, experiences and 
+            knowledge acquired through this course. Every photo represents a piece of 
+            our learning path and artistic growth. We hope our images will inspire you as 
+            much as we were inspired creating them.
+            <br><br>Welcome to our photographic journey!
+        </p>
+
+        <img src="./img/progetto_photo/fotografi1.JPG" alt="foto1">
+    </div>
+    
+    <br>
+
+    <h1>How the project began</h1>
+    <p>
+        This project is a product of the idea and photographic passion of a teacher of 
+        Italian and history of our school: Patrizia Gesini. Because of her passion for 
+        photography and her previous experience, she wanted to pass on her passion to us 
+        thanks to this course: "Contrasts in Daily Life".
+        <br><br>
+        The course was financed by the PNRR (National Recovery and Resilience Plan) and 
+        placed inside the school project “SintonizziAMOci: alta "FREQUENZA" al Marconi 
+        M4C1I1.4-2022-981-P-21407”, which aims at reducing the school dropout and to encourage 
+        greater participation and involvement of all students of the school. There has been 
+        of a total of approximately 25 students distributed 
+        between the various sections of the classes of the third, fourth and fifth year. 
+        Even if many participants 
+        of the course are students of Teacher Gesini, the project has  
+        had great partecipation from other students of the school, demonstrating a 
+        collective interest in the topics covered.
+    </p>
+    
+    <!-- div con l'effetto dell'onda -->
+    <div class="onda">
+        <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 1000 1000"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        overflow="auto"
+        shape-rendering="auto"
+        fill="#1c1c1c"
+        >
+        <defs>
+            <path
+            id="wavepath"
+            d="M 0 2000 0 500 Q 68 469 136 500 t 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0  v1000 z"
+            />
+            <path id="motionpath" d="M -272 0 0 0" />
+        </defs>
+        <g>
+            <use xlink:href="#wavepath" y="447" fill="#2f2f2f">
+                <animateMotion dur="5s" repeatCount="indefinite">
+                    <mpath xlink:href="#motionpath" />
+                </animateMotion>
+            </use>
+        </g>
+    </svg>
+    </div>
+
+    <footer>
+        <div id="footerleft">
+            <h1>Project participants:</h1>
+            <ul style="padding-top: 50px">
+                <li>
+                    Experienced instructor: <br><i><b>Gesini Patrizia</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    Website development: <br><i><b>Luigi Bordignon, Fabiola Arduini</b></i>
+                </li>
+                <br />
+                <br />
+                <li style="text-align: justify;">
+                    Translation and text production: <br><i><b>Luigi Bordignon 
+                        (English), Fabiola Arduini - Joshua Santini (Italian text 
+                        production), Riccardo Santamaria (Spanish), Cedric Maurer 
+                        (German), Valentina Zhang (Chinese)</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    Post-production: <br><i><b>Teacher Gesini, Riccardo Santamaria</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    Classes who participated: <br><i><b>5F INF, 4C INF, 4D INF, 3A INF</b></i>
+                </li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <h1>Our school:<br />G. Marconi Latina</h1>
+            <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </footer>
+    <div id="afterfooter"></div>
+</body>
+</html>
