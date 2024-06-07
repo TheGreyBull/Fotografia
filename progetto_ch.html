@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目 - 摄影之路</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="progetto.css">
+</head>
+<body>
+    <header>
+        <a class="info" href="index_ch.html">主页</a>
+        <a id="infoattuale" href="#">项目</a>
+        <a class="info" href="galleria_ch.html">画廊</a>
+        <!-- <a class="info" href="http://dallasentadennis.altervista.org" style="color: #1c1c1c;">.</a> -->
+        <select
+        id="selectLingue"
+        class="btnLogin-popup"
+        onchange="location = this.value;"
+        >
+            <option value="progetto.html" class="optionLang">IT</option>
+            <option value="progetto_en.html" class="optionLang">EN</option>
+            <option value="progetto_es.html" class="optionLang">ES</option>
+            <option value="progetto_de.html" class="optionLang">DE</option>
+            <option value="#" class="optionLang" selected>CH</option>
+        </select>
+    </header>
+
+    <div id="firstdiv">
+        <h1>我们是谁</h1>
+        <p>
+            我们是一群进入摄影世界的学生，我们渴望通过镜头探索和捕捉我们周围的一切。
+            该网站是我们承诺和创造力的成果，是我们学校组织的摄影课程的一部分。
+            在这里我们将展示我们的作品、我们的经验以及在课程中获得的知识。
+            每张照片都代表了我们学习和艺术成长之旅的一部分。
+            我们希望我们的图片能够像我们创作它们时受到的启发一样给您带来启发。
+            <br><br>
+            欢迎来到我们的摄影之旅！
+        </p>
+
+        <img src="./img/progetto_photo/fotografi1.JPG" alt="foto1">
+    </div>
+    
+    <br>
+
+    <h1>项目是如何诞生的</h1>
+    <p>
+        这个项目源于我们学院的一位意大利语和历史老师 Patrizia Gesini 的想法和对摄影的热情。
+        长期热衷于摄影并有过摄影经验的老师希望通过这门课程“日常生活中的对比”向我们传达这种热情。
+        <br><br>
+        该课程由 PNRR（国家恢复和复原力计划）资助，并纳入学校项目“SintonizziAMOci: 
+        alta "FREQUENZA" al Marconi M4C1I1.4-2022-981-P-21407，
+        旨在减少辍学率并鼓励机构内所有学生更多地参与和参与。此次课程共有约 25 
+        名学生参与，分布在三、四、五年级的各个班级。尽管许多课程参与者都是Gesini教授的学生，
+        但该项目也得到了学校其他学生的支持，表现出对所涵盖主题的集体兴趣。
+
+    </p>
+    
+    <!-- div con l'effetto dell'onda -->
+    <div class="onda">
+        <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 1000 1000"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        overflow="auto"
+        shape-rendering="auto"
+        fill="#1c1c1c"
+        >
+        <defs>
+            <path
+            id="wavepath"
+            d="M 0 2000 0 500 Q 68 469 136 500 t 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0  v1000 z"
+            />
+            <path id="motionpath" d="M -272 0 0 0" />
+        </defs>
+        <g>
+            <use xlink:href="#wavepath" y="447" fill="#2f2f2f">
+                <animateMotion dur="5s" repeatCount="indefinite">
+                    <mpath xlink:href="#motionpath" />
+                </animateMotion>
+            </use>
+        </g>
+    </svg>
+    </div>
+
+    <footer>
+        <div id="footerleft">
+            <h1>项目参与者:</h1>
+            <ul style="padding-top: 50px">
+                <li>
+                    参考老师: <br><i><b>Gesini Patrizia 教授</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    网页开发者: <br><i><b>Luigi Bordignon, Fabiola Arduini</b></i>
+                </li>
+                <br />
+                <br />
+                <li style="text-align: justify;">
+                    文本翻译和制作: <br><i><b>Luigi Bordignon 
+                        (英语), Fabiola Arduini - Joshua Santini 
+                        (意大利语文本创建), Riccardo Santamaria (西班牙语), Cedric Maurer 
+                        (德语), Valentina Zhang (简体中文)</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    后期制作: <br><i><b>Gesini 教授, Riccardo Santamaria</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    参与班级: <br><i><b>5F INF, 4C INF, 4D INF, 3A INF</b></i>
+                </li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <h1>我们的学校:<br />G. Marconi Latina</h1>
+            <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </footer>
+    <div id="afterfooter"></div>
+</body>
+</html>

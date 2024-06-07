@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>主页 - 摄影之路</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <header>
+        <a id="infoattuale" href="#">主页</a>
+        <a class="info" href="progetto_ch.html">项目</a>
+        <a class="info" href="galleria_ch.html">画廊</a>
+        <!-- <a class="info" href="http://dallasentadennis.altervista.org" style="color: #1c1c1c;">.</a> -->
+        <select
+        id="selectLingue"
+        class="btnLogin-popup"
+        onchange="location = this.value;"
+        >
+            <option value="index.html" class="optionLang">IT</option>
+            <option value="index_en.html" class="optionLang">EN</option>
+            <!-- <option value="index_es.html" class="optionLang">ES</option>
+            <option value="index_de.html" class="optionLang">DE</option> -->
+            <option value="#" class="optionLang" selected>CH</option>
+        </select>
+    </header>
+
+    <div id="firstelement">
+        <h3 style="margin-top: 80px">项目:</h3>
+        <h1 style="font-size: 30px">
+            SintonizziAMOci: alta "FREQUENZA" al Marconi M4C1I1.4-2022-981-P-21407
+        </h1>
+        <h1 style="margin-top: 10vh">日常生活中的对比</h1>
+    </div>
+    <br />
+    <h2>
+        摄影简史和“暗室”的起源
+    </h2>
+    <p>
+        1839 年 8 月 19 日星期一被认为是摄影的诞生日，摄影在巴黎正式引入。
+        摄影的历史与暗箱的演变密切相关，暗箱证明了捕捉和固定图像中特定时刻的可能性。
+        <br /><br />
+        暗箱的起源可以追溯到古代，其光学原理知识允许通过黑暗房间中的小孔观察倒立的图像。
+        然而，直到文艺复兴时期，暗箱才开始被用作一种艺术和科学工具，
+        艺术家似乎也使用类似的设备在他们的艺术作品中实现准确和详细的透视。
+        <br /><br />
+        几个世纪以来，无数学者和科学家为暗箱的发展和完善做出了贡献。
+        <br /><br />
+        但 17 世纪便携式暗室的发明标志着摄影诞生的重要一步。随着光学技术的进步和对化学过程的了解，
+        固定暗箱投射图像的实验开始形成。
+        <br /><br />
+        便携式暗室的发明和对永久固定投影图像潜力的直觉代表了摄影史上的一个根本转折点。随后，
+        随着光学和化学技术的发展，暗室逐渐转变为日益精密且易于使用的相机，为现代摄影的诞生铺平了道路。
+        <br /><br />
+    </p>
+
+    <div id="camerascuradiv">
+        <img src="./img/index_photo/camerascura1.jpg" alt="foto1">
+        <img src="./img/index_photo/camerascura2.jpg" alt="foto2">
+    </div>
+
+    <br />
+
+    <div id="panoramicadiv">
+        <h2>项目概况</h2>
+        <p>
+            在这个项目中，P. Gesini教授展示了摄影和相机的历史，它是如何诞生的以及在哪里诞生的，
+            同时也重点关注了历史时期。当然，受我们学校的主要学习计划：信息技术的启发，
+            他展示了“相机”至今的功能和演变，说明了数码相机和模拟相机之间的差异。
+            <br><br>
+            课程涵盖不同的摄影主题和技术，在学习摄影基础知识的同时，
+            参与者能够获得不同类型的拍摄和技术的经验，例如长时间曝光、散景、平移和高速摄影。
+            在课程中，学生们不乏将照片、自然和历史背景结合起来的机会；在众多的现场体验中，
+            值得一提的是宁法花园之旅。
+            <br><br>
+            下面您可以看到在课程生动的课程中拍摄的一些照片。
+        </p>
+        
+        <div id="fotodiv">
+            <img src="./img/index_photo/alunno1.jpg" alt="foto1" />
+            <img src="./img/index_photo/limoni.jpg" alt="foto2" />
+            <img src="./img/index_photo/cornice.jpg" alt="foto3" />
+            <img src="./img/index_photo/fiocco.jpg" alt="foto4" />
+            <img src="./img/index_photo/moto1.jpg" alt="foto5" />
+        </div>
+    </div>
+
+    <!-- div con l'effetto dell'onda -->
+    <div class="onda">
+        <svg
+        width="100%"
+        viewBox="0 0 1000 1000"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        overflow="auto"
+        shape-rendering="auto"
+        fill="#1c1c1c"
+        >
+        <defs>
+            <path
+            id="wavepath"
+            d="M 0 2000 0 500 Q 68 469 136 500 t 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0  v1000 z"
+            />
+            <path id="motionpath" d="M -272 0 0 0" />
+        </defs>
+        <g>
+            <use xlink:href="#wavepath" y="447" fill="#2f2f2f">
+                <animateMotion dur="5s" repeatCount="indefinite">
+                    <mpath xlink:href="#motionpath" />
+                </animateMotion>
+            </use>
+        </g>
+    </svg>
+    </div>
+
+    <footer>
+        <div id="footerleft">
+            <h1>项目参与者:</h1>
+            <ul style="padding-top: 50px">
+                <li>
+                    参考老师: <br><i><b>Gesini Patrizia 教授</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    网页开发者: <br><i><b>Luigi Bordignon, Fabiola Arduini</b></i>
+                </li>
+                <br />
+                <br />
+                <li style="text-align: justify;">
+                    文本翻译和制作: <br><i><b>Luigi Bordignon 
+                        (英语), Fabiola Arduini - Joshua Santini 
+                        (意大利语文本创建), Riccardo Santamaria (西班牙语), Cedric Maurer 
+                        (德语), Valentina Zhang (简体中文)</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    后期制作: <br><i><b>Gesini 教授, Riccardo Santamaria</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    参与班级: <br><i><b>5F INF, 4C INF, 4D INF, 3A INF</b></i>
+                </li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <h1>我们的学校:<br />G. Marconi Latina</h1>
+            <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </footer>
+    <div id="afterfooter"></div>
+</body>
+</html>

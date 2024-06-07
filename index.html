@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Percorso di fotografia</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <header>
+        <a id="infoattuale" href="#">Home</a>
+        <a class="info" href="progetto.html">Progetto</a>
+        <a class="info" href="galleria.html">Galleria</a>
+        <!-- <a class="info" href="http://dallasentadennis.altervista.org" style="color: #1c1c1c;">.</a> -->
+        <select
+        id="selectLingue"
+        class="btnLogin-popup"
+        onchange="location = this.value;"
+        >
+            <option value="#" selected class="optionLang">IT</option>
+            <option value="index_en.html" class="optionLang">EN</option>
+            <!-- <option value="index_es.html" class="optionLang">ES</option>
+            <option value="index_de.html" class="optionLang">DE</option> -->
+            <option value="index_ch.html" class="optionLang">CH</option>
+        </select>
+    </header>
+
+    <div id="firstelement">
+        <h3 style="margin-top: 80px">Progetto:</h3>
+        <h1 style="font-size: 30px">
+            SintonizziAMOci: alta "FREQUENZA" al Marconi M4C1I1.4-2022-981-P-21407
+        </h1>
+        <h1 style="margin-top: 10vh">Contrasti nella Quotidianità</h1>
+    </div>
+    <br />
+    <h2>
+        Una breve storia della fotografia e le origini della 'camera oscura'
+    </h2>
+    <p>
+        Lunedì 19 agosto 1839 è riconosciuto come il giorno in cui è nata la
+        fotografia, quando fu presentata ufficialmente a Parigi. La storia della
+        fotografia è strettamente legata all'evoluzione della camera oscura, che
+        dimostrò la possibilità di catturare e fissare un particolare momento in
+        un'immagine.<br /><br />
+        Le radici della camera oscura risalgono all'antichità, con la conoscenza
+        dei principi ottici che permettevano di osservare immagini invertite
+        attraverso un piccolo foro in una stanza oscurata. Tuttavia, è nel
+        Rinascimento che la camera oscura inizia ad essere utilizzata come
+        strumento artistico e scientifico, con artisti che sembrano aver
+        utilizzato dispositivi simili per ottenere prospettive accurate e
+        dettagliate nelle loro opere d'arte.<br /><br />
+        Nel corso dei secoli, numerosi studiosi e scienziati hanno contribuito
+        allo sviluppo e al perfezionamento della camera oscura.<br /><br />
+        Ma fu l'invenzione della camera oscura portatile nel XVII secolo a
+        rappresentare un passo significativo verso la nascita della fotografia.
+        Con l'avanzamento della tecnologia ottica e la comprensione dei processi
+        chimici, gli esperimenti per fissare le immagini proiettate dalla camera
+        oscura iniziarono a prendere forma.<br /><br />
+        L'invenzione della camera oscura portatile e l'intuizione delle
+        potenzialità di fissare permanentemente le immagini proiettate
+        rappresentano una svolta fondamentale nella storia della fotografia.
+        Successivamente, con l'evoluzione della tecnologia ottica e chimica, la
+        camera oscura si trasformò gradualmente in macchine fotografiche sempre
+        più sofisticate e accessibili, aprendo la strada alla nascita della
+        fotografia moderna.<br /><br />
+    </p>
+
+    <div id="camerascuradiv">
+        <img src="./img/index_photo/camerascura1.jpg" alt="foto1">
+        <img src="./img/index_photo/camerascura2.jpg" alt="foto2">
+    </div>
+
+    <br />
+
+    <div id="panoramicadiv">
+        <h2>Una panoramica sul progetto</h2>
+        <p>
+            In questo progetto la prof.ssa P. Gesini ha illustrato la storia della 
+            fotografia e della macchina fotografica, com'è nata e dove, concentrandosi 
+            anche sul periodo storico. Naturalmente, ha mostrato il funzionamento e 
+            l'evoluzione della “macchina fotografica” fino ai giorni d'oggi, illustrando 
+            le differenze che vi sono tra le macchinette digitali e quelle analogiche, 
+            motivato dal principale piano di studi della nostra scuola: l'informatica.
+            <br><br>Le lezioni hanno trattato diverse tematiche e tecniche fotografiche, e 
+            parallelamente all'apprendimento delle basi della fotografia, i partecipanti 
+            hanno potuto fare esperienze su diversi tipi di scatto e tecniche, come le 
+            lunghe esposizioni, bokeh, panning e high speed photography. Nel corso non 
+            sono mancate occasioni in cui gli studenti hanno potuto unire le foto, la natura 
+            e il contesto storico; tra le molte esperienze dal vivo è possibile menzionare la 
+            gita ai giardini di Ninfa.
+            <br><br>Di seguito è possibile osservare alcune delle molte fotografie scattate
+            durante le vivaci lezioni del corso.
+        </p>
+        
+        <div id="fotodiv">
+            <img src="./img/index_photo/alunno1.jpg" alt="foto1" />
+            <img src="./img/index_photo/limoni.jpg" alt="foto2" />
+            <img src="./img/index_photo/cornice.jpg" alt="foto3" />
+            <img src="./img/index_photo/fiocco.jpg" alt="foto4" />
+            <img src="./img/index_photo/moto1.jpg" alt="foto5" />
+        </div>
+    </div>
+
+    <!-- div con l'effetto dell'onda -->
+    <div class="onda">
+        <svg
+        width="100%"
+        viewBox="0 0 1000 1000"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        overflow="auto"
+        shape-rendering="auto"
+        fill="#1c1c1c"
+        >
+        <defs>
+            <path
+            id="wavepath"
+            d="M 0 2000 0 500 Q 68 469 136 500 t 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0  v1000 z"
+            />
+            <path id="motionpath" d="M -272 0 0 0" />
+        </defs>
+        <g>
+            <use xlink:href="#wavepath" y="447" fill="#2f2f2f">
+                <animateMotion dur="5s" repeatCount="indefinite">
+                    <mpath xlink:href="#motionpath" />
+                </animateMotion>
+            </use>
+        </g>
+    </svg>
+    </div>
+
+    <footer>
+        <div id="footerleft">
+            <h1>Partecipanti al progetto:</h1>
+            <ul style="padding-top: 50px">
+                <li>
+                    Docente esperto: <br><i><b>Prof.ssa Gesini Patrizia</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    Sviluppo sito web: <br><i><b>Luigi Bordignon, Fabiola Arduini</b></i>
+                </li>
+                <br />
+                <br />
+                <li style="text-align: justify;">
+                    Traduzione e produzione dei testi: <br><i><b>Luigi Bordignon 
+                        (inglese), Fabiola Arduini - Joshua Santini (creazione testi 
+                        in italiano), Riccardo Santamaria (spagnolo), Cedric Maurer 
+                        (tedesco), Valentina Zhang (cinese)</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    Post-produzione: <br><i><b>Prof.ssa Gesini, Riccardo Santamaria</b></i>
+                </li>
+                <br />
+                <br />
+                <li>
+                    Classi partecipanti: <br><i><b>5F INF, 4C INF, 4D INF, 3A INF</b></i>
+                </li>
+            </ul>
+        </div>
+        <div id="footerright">
+            <h1>La nostra scuola:<br />G. Marconi Latina</h1>
+            <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+    </footer>
+    <div id="afterfooter"></div>
+</body>
+</html>

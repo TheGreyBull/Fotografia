@@ -1,29 +1,31 @@
-* { /*selettore universale*/
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #1c1c1c;
-}
-
-/*----- Header -----*/
 header {
-    position: fixed;    /* l'header rimane fisso */
-    top: 0;
+    position: fixed;
     left: 0;
-    width: 100vw;
-    padding: 4px 80px;    /*top e bottom paddings sono 20px, right e left sono 100px*/
+    top: 0;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 15px;
+    background-color: #1c1c1cA1;
+    z-index: 20;
+
     display: flex;
-    justify-content: space-between; /*altrimenti le scritte verrebbero storte*/
+    justify-content: center; /*altrimenti le scritte verrebbero storte*/
     align-items: center;
-    z-index: 99;
-    background: #1c1c1cA1;
 }
 
-#info, #infoattuale {
+a, a:active, a:hover, a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+.info, #infoattuale {
     position: relative;
     font-size: 3vh;
     color: #ddc962;
@@ -32,7 +34,7 @@ header {
     margin-left: 4vw;
 }
 
-#info::after, #infoattuale::after {
+.info::after, #infoattuale::after {
     content: '';
     position: absolute;
     left: 0;
@@ -47,17 +49,28 @@ header {
 }
 
 /* quando si passa sopra con il muose appare la linea*/
-#info:hover::after, #infoattuale::after {
+.info:hover::after, #infoattuale::after {
     transform-origin: left; /* così che la line appaia da sinistra*/
     transform: scaleX(1); 
 }
 
-.navigation{
-    margin-left: 20 vw;
+.info:hover, #infoattuale:hover {
+    color: #ddc962;
 }
 
+body {
+    background-color: #1c1c1c;
+    color: white;
+    overflow-x: hidden;
+}
 
-.navigation .btnLogin-popup {
+select {
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+
     width: 8.5vw;
     height: 6.5vh;
     background: transparent;
@@ -71,18 +84,9 @@ header {
     transition: .5s;
 }
 
-/* per cambiare il bottone login al passaggio del mouse*/
-.navigation .btnLogin-popup:hover {
+select:hover {
     background: #ddc962;    /* cambia il colore dello sfondo del bottone*/
     color: #1c1c1c;         /* cambia il colore della scritta Login */
-}
-
-#selectLingue {
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
 }
 
 .optionLang {
@@ -90,72 +94,110 @@ header {
     color: #1c1c1c;
 }
 
-.optionLang:hover {
-    background-color: red;
+footer {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    bottom: 0px;
+    padding-top: 20vh;
+    padding-left: 20px;
+    padding-right: 60px;
+    background-color: #2f2f2f;
 }
-
-
-.home{
-    width: 100vw;
-}
-
-#mainTitle {
-    font-size: 80px;
-    font-weight: 900;
-    color: #fff;
-}
-
-
-/* footer da sistemare */
+/* 
 .box {
-    width: 100vw;
-    height: 50vh;
-    background-color: blueviolet;
+    width: 100%;
+    height: 25vh;
+    background-color: #2f2f2f;
     animation: animateWave 2.5s linear infinite;
     --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(60% - 186px) 0/372px 80%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 60% 93px/372px 80% repeat-x;
     -webkit-mask: var(--mask);
             mask: var(--mask);
-  }
+} */
 
-  @keyframes animateWave {
+#footerleft {
+    width: 50%;
+}
+
+#footerleft > h1, #footerright > h1 {
+    text-align: left;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#footerleft > ul {
+    padding-left: 50px;
+}
+
+iframe {
+    width: 25vw;
+    height: 25vw;
+    padding-left: 20px;
+}
+
+#afterfooter {
+    height: 20vh;
+    background-color: #2f2f2f;
+}
+
+/* @keyframes animateWave {
     0% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(60% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 60% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);   
+        -webkit-mask: var(--mask);
+                mask: var(--mask);   
     }
-    25%
-    {
+    25% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(65% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 65% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
-    50%
-    {
+    50% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(70% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 70% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
-    75%
-    {
+    75% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(75% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 75% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
     100% {
         --mask:
         radial-gradient(207.95px at 50% 279px,#000 99%,#0000 101%) calc(80% - 186px) 0/372px 100%,
         radial-gradient(207.95px at 50% -186px,#0000 99%,#000 101%) 80% 93px/372px 100% repeat-x;
-    -webkit-mask: var(--mask);
-            mask: var(--mask);
+        -webkit-mask: var(--mask);
+                mask: var(--mask);
     }
+} */
+
+li {
+    font-size: 20px;
+}
+
+p {
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.onda {
+    margin-bottom: -10px;
+    overflow: hidden;
+}
+
+svg {
+    margin-top: -550px;
 }

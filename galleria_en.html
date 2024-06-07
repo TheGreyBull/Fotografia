@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Photography Path</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="galleria.css" />
+    <script>
+      function trovaSezione() {}
+      function caricaImg(sezione) {}
+    </script>
+  </head>
+  <body>
+    <header>
+      <a class="info" href="index_en.html">Home</a>
+      <a class="info" href="progetto_en.html">Project</a>
+      <a id="infoattuale" href="#">Gallery</a>
+      <!-- <a class="info" href="http://dallasentadennis.altervista.org" style="color: #1c1c1c;">.</a> -->
+      <select
+      id="selectLingue"
+      class="btnLogin-popup"
+      onchange="location = this.value;"
+      >
+          <option value="galleria.html" selected class="optionLang">IT</option>
+          <option value="#" class="optionLang" selected>EN</option>
+          <!-- <option value="galleria_es.html" class="optionLang">ES</option>
+          <option value="galleria_de.html" class="optionLang">DE</option> -->
+          <option value="galleria_ch.html" class="optionLang">CH</option>
+      </select>
+    </header>
+
+    <div id="firstdiv">
+      <h1>Our photos</h1>
+      <p>
+        Our photos have been organised into 9 main cathegories: Ninfa trip, bokeh technique,
+        panning technique, still life, portraits, long exposures, the nature, high speed 
+        photography, backstage.
+        <br>It is possible to view a section by selecting the slide and clicking the 
+        button "Load section".
+      </p>
+    </div>
+
+    <div class="container_pop">
+      <span class="slider_pop" id="s1"></span>
+      <span class="slider_pop" id="s2"></span>
+      <span class="slider_pop" id="s3"></span>
+      <span class="slider_pop" id="s4"></span>
+      <span class="slider_pop" id="s5"></span>
+      <span class="slider_pop" id="s6"></span>
+      <span class="slider_pop" id="s7"></span>
+      <span class="slider_pop" id="s8"></span>
+      <span class="slider_pop" id="s9"></span>
+
+      <div class="imgContainer_pop" id="imgContainer_pop">
+        <div class="slide_div_pop">
+          <img
+            src="./img/slide_photo/DSC_0436.JPG"
+            alt=""
+            class="img_pop"
+            id="img_pop1"
+          />
+          <a href="#s1" class="button_pop" id="button_pop1"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img
+            src="./img/slide_photo/Fiocco_MG_8516.jpg"
+            alt=""
+            class="img_pop"
+            id="img_pop2"
+          />
+          <a href="#s2" class="button_pop" id="button_pop2"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img
+            src="./img/slide_photo/DSC_0045.JPG"
+            alt=""
+            class="img_pop"
+            id="img_pop3"
+          />
+          <a href="#s3" class="button_pop" id="button_pop3"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img
+            src="./img/slide_photo/Teiera.jpg"
+            alt=""
+            class="img_pop"
+            id="img_pop4"
+          />
+          <a href="#s4" class="button_pop" id="button_pop4"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img
+            src="./img/slide_photo/DSC_0105.JPG"
+            alt=""
+            class="img_pop"
+            id="img_pop5"
+          />
+          <a href="#s5" class="button_pop" id="button_pop5"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img src="./img/slide_photo/9.jpg" alt="" class="img_pop" id="img_pop6" />
+          <a href="#s6" class="button_pop" id="button_pop6"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img src="./img/slide_photo/foglia.jpg" alt="" class="img_pop" id="img_pop7" />
+          <a href="#s7" class="button_pop" id="button_pop7"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img src="./img/slide_photo/fetta_kiwi.jpg" alt="" class="img_pop" id="img_pop8" />
+          <a href="#s8" class="button_pop" id="button_pop8"></a>
+        </div>
+
+        <div class="slide_div_pop">
+          <img src="./img/slide_photo/gruppo_fotografi.JPG" alt="" class="img_pop" id="img_pop9" />
+          <a href="#s9" class="button_pop" id="button_pop9"></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="godiv">
+      <button onclick="caricaSezione()">Load section</button>
+    </div>
+
+    <div id="s1_div" class="section_div" style="display: none;">
+      <h1>Ninfa trip</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/gita_ninfa/DSC_0365.JPG">
+          <img src="./img/galleria_photo/gita_ninfa/JPEG-Bild_a-song-of-red-and-green.jpeg.jpg">
+          <img src="./img/galleria_photo/gita_ninfa/JPEG-Bild.jpeg.jpg">
+        </div>
+        <p>
+          A tranquil river scene with its crystalline reflection. The majestic trees 
+          highlight a contrast between autumn and spring. A place full of history and 
+          cultural charm.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/gita_ninfa/DSC_0441.JPG">
+          <img src="./img/galleria_photo/gita_ninfa/Kalter_teich_im_schatten.jpeg.jpg">
+          <img src="./img/galleria_photo/gita_ninfa/Teich_im_dunkeln.jpeg.jpg">
+        </div>
+        <p>
+          A stream with clear water, which is reflecting the lush vegetation of the spring 
+          flora. A peaceful corner with a green pond under a cool morning in the gardens 
+          of Ninfa.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/gita_ninfa/DSC_0421.JPG">
+          <img src="./img/galleria_photo/gita_ninfa/DSC_0434.JPG">
+          <img src="./img/galleria_photo/gita_ninfa/DSC_0428.JPG">
+        </div>
+        <p>
+          A tree in full spring bloom, with delicated white and pink flowers which 
+          contrast the surrounding green colour. A dense bamboo forest towering towards 
+          the sky, a suggestive and peaceful corner of gardens of Ninfa.
+        </p>
+      </div>
+    </div>
+
+    <div id="s2_div" class="section_div" style="display: none;">
+      <h1>Bokeh technique</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/bokeh/Liquore_cioccolato.jpg">
+          <img src="./img/galleria_photo/bokeh/Liquore_e_bicchiere.jpg">
+          <img src="./img/galleria_photo/bokeh/ombrello_lucine.jpg">
+        </div>
+        <p>
+          A glass of liquor beside a piece of chocolate, immersed in an intimate atmosphere 
+          with bokeh lights that add magic to the composition. A bright setting captured 
+          with the bokeh technique, creating an ethernal and enchanting atmosphere.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/bokeh/Fiocco_MG_8516.jpg">
+          <img src="./img/galleria_photo/bokeh/Fiocco_MG_8517.jpg">
+          <img src="./img/galleria_photo/bokeh/kine_luci.jpg">
+        </div>
+        <p>
+          
+        </p>
+      </div>
+    </div>
+
+    <div id="s3_div" class="section_div" style="display: none;">
+      <h1>Panning technique</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/panning/DSC_0045.JPG">
+          <img src="./img/galleria_photo/panning/Massimo.jpg">
+          <img src="./img/galleria_photo/panning/panning_macchina_bianca.jpg">
+        </div>
+        <p>
+          The bikers quickly move against the fading background of the school. The car 
+          passes through the crossroad, with the landscape quickly passing by.
+        </p>
+      </div>
+    </div>
+
+    <div id="s4_div" class="section_div" style="display: none;">
+      <h1>Still life and light painting</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/light_panning-still_life/_MG_8582.jpg">
+          <img src="./img/galleria_photo/light_panning-still_life/Teiera.png">
+          <img src="./img/galleria_photo/light_panning-still_life/Amaro_capo.jpg">
+        </div>
+        <p>
+          Still life photos that capture the elegance of simplicity, with a ceramic teapot, 
+          decorative bags and green leaves. A touch of tradition is represented by the 
+          bottle of 'Vecchio Amaro del Capo', which is put in front of a delicate floral background. 
+          The soft light enhances details and creates an intimate and warm atmosphere.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/light_panning-still_life/vaso_margerite.JPG">
+          <img src="./img/galleria_photo/light_panning-still_life/DSC_0304.JPG">
+          <img src="./img/galleria_photo/light_panning-still_life/Vaso_rose.jpg">
+        </div>
+        <p>
+          Still life images that capture the essence of floral beauty. Because of the use 
+          of dramatic lighting and a dark background, the flowers stand out in all 
+          their vibrancy and delicacy. The still-life technique highlights the 
+          details and texture of each petal, creating a refined and contemplative atmosphere.
+        </p>
+      </div>
+    </div>
+
+    <div id="s5_div" class="section_div" style="display: none;">
+      <h1>Portraits and models</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/ritratto/3_ragazze.jpg">
+          <img src="./img/galleria_photo/ritratto/DSC_0157.JPG">
+          <img src="./img/galleria_photo/ritratto/DSC_0158.JPG">
+        </div>
+        <p>
+          The comparison of the three models highlighted by the brightness of the bubbles.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/ritratto/confronto1.jpeg">
+          <img src="./img/galleria_photo/ritratto/confronto2.jpeg">
+          <img src="./img/galleria_photo/ritratto/Ragazze2.jpeg">
+        </div>
+        <p>
+          
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/ritratto/Gaia_cappello.jpg">
+          <img src="./img/galleria_photo/ritratto/Iris_cappello.jpg">
+          <img src="./img/galleria_photo/ritratto/Kine_cappello.jpg">
+        </div>
+        <p>
+          
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/ritratto/Iris_2.jpg">
+          <img src="./img/galleria_photo/ritratto/Sofia_mai-piu.jpg">
+          <img src="./img/galleria_photo/ritratto/Sofia.jpg">
+        </div>
+        <p>
+          
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/ritratto/Modello1.jpg">
+          <img src="./img/galleria_photo/ritratto/Davide.jpg">
+          <img src="./img/galleria_photo/ritratto/Luigi.jpg">
+        </div>
+        <p>
+          The portrait "painted" on a bright mimosa tree.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/ritratto/Gaia_2.jpg">
+          <img src="./img/galleria_photo/ritratto/Kine_ritratto.jpg">
+          <img src="./img/galleria_photo/ritratto/Sofia_fiori.jpg">
+        </div>
+        <p>
+          
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/ritratto/Iris_vestito_cappello.jpg">
+          <img src="./img/galleria_photo/ritratto/DSC_0136.JPG">
+          <img src="./img/galleria_photo/ritratto/Profilo_Iris_blu.jpg">
+        </div>
+        <p>
+          
+        </p>
+      </div>
+    </div>
+
+    <div id="s6_div" class="section_div" style="display: none;">
+      <h1>Long exposures</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/lunghe_esposizioni/1.jpg">
+          <img src="./img/galleria_photo/lunghe_esposizioni/2.jpg">
+          <img src="./img/galleria_photo/lunghe_esposizioni/4.jpg">
+        </div>
+        <p>
+          The grandeur and timeless beauty of historical monuments. Each shot 
+          highlights the extraordinary architecture and cultural importance of 
+          these buildings, which tell stories of bygone eras and enrich our heritage.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/lunghe_esposizioni/5.jpg">
+          <img src="./img/galleria_photo/lunghe_esposizioni/9.jpg">
+          <img src="./img/galleria_photo/lunghe_esposizioni/6.jpg">
+        </div>
+        <p>
+          The calm water perfectly reflects the night sky, creating a double show of 
+          twinkling lights. A play of light and shadow where the infinity of the 
+          cosmos joins the serenity of the earth, offering a breathtaking view and 
+          a moment of pure natural magic.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/lunghe_esposizioni/8.jpg">
+          <img src="./img/galleria_photo/lunghe_esposizioni/7.jpg">
+          <img src="./img/galleria_photo/lunghe_esposizioni/3.JPG">
+        </div>
+        <p>
+          A fascinating nocturnal panorama that reveals the mysterious beauty of 
+          the starry sky. The constellations sparkle like diamonds in the dark, 
+          offering a breathtaking spectacle and a moment of reflection beneath the 
+          infinity of the cosmos.
+        </p>
+      </div>
+    </div>
+
+    <div id="s7_div" class="section_div" style="display: none;">
+      <h1>Nature</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/natura/Blume_bearbeitet.jpeg">
+          <img src="./img/galleria_photo/natura/DSC_0351.JPG">
+          <img src="./img/galleria_photo/natura/papavero1.jpg">
+        </div>
+        <p>
+          The vibrant beauty of these red plants, showing its intense shades and 
+          its elegant shape. Each shot highlights its vibrant presence, paying homage 
+          to the strength and vitality that these plants represent in the natural world.
+        </p>
+      </div>
+      
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/natura/foglia.jpg">
+          <img src="./img/galleria_photo/natura/ragno.jpg">
+          <img src="./img/galleria_photo/natura/papavero2.jpg">
+        </div>
+        <p>
+          The uniqueness of each element of nature has a precious value. Whether 
+          it is the agility of a spider or the elegance of a poppy, nature always 
+          offers something that amazes.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/natura/insetto.jpg">
+          <img src="./img/galleria_photo/natura/Luce_nel_buio.jpeg">
+          <img src="./img/galleria_photo/natura/fiore.jpg">
+        </div>
+        <p>
+          The delicacy of a pink flower is portrayed next to an insect resting on 
+          purple flowers. The combination of colors and the interaction between the 
+          flower and the insect celebrate the beauty and balance of the natural 
+          ecosystem, capturing a moment of pure serenity.
+        </p>
+      </div>
+    </div>
+
+    <div id="s8_div" class="section_div" style="display: none;">
+      <h1>High speed photography</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/high-speed_photography/pomodoro1.jpg">
+          <img src="./img/galleria_photo/high-speed_photography/pomodoro2.jpg">
+          <img src="./img/galleria_photo/high-speed_photography/pomodoro3.jpg">
+        </div>
+        <p>
+          The tomatoes, frozen in water, with droplets dancing around them, 
+          captured in their dynamic beauty through high-speed photography.
+        </p>
+      </div>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/high-speed_photography/fetta_kiwi.jpg">
+          <img src="./img/galleria_photo/high-speed_photography/fetta_kiwi2.jpg">
+          <img src="./img/galleria_photo/high-speed_photography/kiwi.jpg">
+        </div>
+        <p>
+          The kiwis after the impact on the water, with their pulp and seeds that 
+          look like gems, frozen in a moment of dynamic impact.
+        </p>
+      </div>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/high-speed_photography/ciliegia.jpg">
+          <img src="./img/galleria_photo/high-speed_photography/fragola1.jpg">
+          <img src="./img/galleria_photo/high-speed_photography/limone2.jpg">
+        </div>
+        <p>
+          Three vibrant moments: fruit dipped in water, a sea of color and freshness 
+          that spread through the water in a kaleidoscope of sensations.
+        </p>
+      </div>
+    </div>
+
+    <div id="s9_div" class="section_div" style="display: none;">
+      <h1>Backstage</h1>
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/backstage/DSC_0176.JPG">
+          <img src="./img/galleria_photo/backstage/bs3.JPG">
+          <img src="./img/galleria_photo/backstage/bolle.jpg">
+        </div>
+        <p>
+          Photographers in action as they capture the ephemeral charm of soap 
+          bubbles, transforming the ordinary into the extraordinary through the lens 
+          of their creativity.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/backstage/bs4.JPG">
+          <img src="./img/galleria_photo/backstage/bs_fragola.jpg">
+          <img src="./img/galleria_photo/backstage/bs1.jpg">
+        </div>
+        <p>
+          Preparing to capture the explosive action of the fruit diving into the water, 
+          ready to immortalize the fleeting moment with the high-speed technique. 
+          Refinements of the model's positions for the perfect shot.
+        </p>
+      </div>
+
+      <div class="subsection_div">
+        <div class="img_div">
+          <img src="./img/galleria_photo/backstage/gruppo_fotografi.JPG">
+          <img src="./img/galleria_photo/backstage/gruppo_fotografi2.JPG">
+          <img src="./img/galleria_photo/backstage/bs2.JPG">
+        </div>
+        <p>
+          Looking for the perfect position for a group shot, trying to capture the 
+          fleeting moment. Choosing the ideal photo often requires a lot of time and effort.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- div con l'effetto dell'onda -->
+    <div class="onda">
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 1000 1000"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        overflow="auto"
+        shape-rendering="auto"
+        fill="#1c1c1c"
+      >
+        <defs>
+          <path
+            id="wavepath"
+            d="M 0 2000 0 500 Q 68 469 136 500 t 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0 136 0  v1000 z"
+          />
+          <path id="motionpath" d="M -272 0 0 0" />
+        </defs>
+        <g>
+          <use xlink:href="#wavepath" y="447" fill="#2f2f2f">
+            <animateMotion dur="5s" repeatCount="indefinite">
+              <mpath xlink:href="#motionpath" />
+            </animateMotion>
+          </use>
+        </g>
+      </svg>
+    </div>
+
+    <footer>
+      <div id="footerleft">
+          <h1>Project participants:</h1>
+          <ul style="padding-top: 50px">
+              <li>
+                  Experienced instructor: <br><i><b>Gesini Patrizia</b></i>
+              </li>
+              <br />
+              <br />
+              <li>
+                  Website development: <br><i><b>Luigi Bordignon, Fabiola Arduini</b></i>
+              </li>
+              <br />
+              <br />
+              <li style="text-align: justify;">
+                  Translation and text production: <br><i><b>Luigi Bordignon 
+                      (English), Fabiola Arduini - Joshua Santini (Italian text 
+                      production), Riccardo Santamaria (Spanish), Cedric Maurer 
+                      (German), Valentina Zhang (Chinese)</b></i>
+              </li>
+              <br />
+              <br />
+              <li>
+                  Post-production: <br><i><b>Teacher Gesini, Riccardo Santamaria</b></i>
+              </li>
+              <br />
+              <br />
+              <li>
+                  Classes who participated: <br><i><b>5F INF, 4C INF, 4D INF, 3A INF</b></i>
+              </li>
+          </ul>
+      </div>
+      <div id="footerright">
+          <h1>Our school:<br />G. Marconi Latina</h1>
+          <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.3380393070875!2d12.884569711240582!3d41.475270571169055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13250b79ff2015b3%3A0xcb22c39461dd03e5!2sIIS%20Guglielmo%20Marconi!5e0!3m2!1sit!2sit!4v1715952058867!5m2!1sit!2sit"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+      </div>
+  </footer>
+  <div id="afterfooter"></div>
+  </body>
+</html>

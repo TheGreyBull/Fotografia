@@ -1,0 +1,196 @@
+#firstdiv {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#firstdiv h1 {
+    padding: 40px;
+    font-size: 30px;
+}
+
+#firstdiv p {
+    padding-left: 60px;
+}
+
+:root {
+    --imgHeight: 50vh;
+}
+
+* {
+    /*selettore universale*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container_pop {
+    width: 100%;
+    height: 100vh;
+    display: row;
+    align-items: center;
+    overflow: hidden;
+    background-color: #1c1c1c;
+}
+
+.imgContainer_pop {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    z-index: 5;
+}
+
+.slide_div_pop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px;
+}
+
+.img_pop {
+position: relative;
+    width: 25vw;
+    height: var(--imgHeight);
+    transition: 0.5s;
+    filter: saturate(10%);
+    border-radius: 20px;
+}
+
+.button_pop {
+    position: absolute;
+    width: 25vw;
+    height: var(--imgHeight);
+    transition: 0.5s;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.button_pop:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#s1:target ~ .imgContainer_pop #img_pop1,
+#s1:target ~ .imgContainer_pop #button_pop1,
+#s2:target ~ .imgContainer_pop #img_pop2,
+#s2:target ~ .imgContainer_pop #button_pop2,
+#s3:target ~ .imgContainer_pop #img_pop3,
+#s3:target ~ .imgContainer_pop #button_pop3,
+#s4:target ~ .imgContainer_pop #img_pop4,
+#s4:target ~ .imgContainer_pop #button_pop4,
+#s5:target ~ .imgContainer_pop #img_pop5,
+#s5:target ~ .imgContainer_pop #button_pop5,
+#s6:target ~ .imgContainer_pop #img_pop6,
+#s6:target ~ .imgContainer_pop #button_pop6,
+#s7:target ~ .imgContainer_pop #img_pop7,
+#s7:target ~ .imgContainer_pop #button_pop7,
+#s8:target ~ .imgContainer_pop #img_pop8,
+#s8:target ~ .imgContainer_pop #button_pop8,
+#s9:target ~ .imgContainer_pop #img_pop9,
+#s9:target ~ .imgContainer_pop #button_pop9 {
+    transform: scale(1.1);
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#s1:target ~ .imgContainer_pop {
+    left: 80%;
+}
+#s2:target ~ .imgContainer_pop {
+    left: 60%;
+}
+#s3:target ~ .imgContainer_pop {
+    left: 40%;
+}
+#s4:target ~ .imgContainer_pop {
+    left: 20%;
+}
+#s5:target ~ .imgContainer_pop {
+    left: 0%;
+}
+#s6:target ~ .imgContainer_pop {
+    left: -20%;
+}
+#s7:target ~ .imgContainer_pop {
+    left: -40%;
+}
+#s8:target ~ .imgContainer_pop {
+    left: -60%;
+}
+#s9:target ~ .imgContainer_pop {
+    left: -80%;
+}
+
+#godiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    z-index: 20;
+}
+
+#godiv button {
+    background-color: #1c1c1c;
+    border: 1px solid #ddc962;
+    color: #ddc962;
+    padding: 7px;
+    font-size: 3vh;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    z-index: 15;
+}
+
+#godiv button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1.5vh;
+    width: 100%;
+    height: 3px;
+    background: #ddc962;    /*color oro 25% più chiaro e 25% più desaturato*/
+    border-radius: 5px;
+    transform-origin: right; /*così che la linea scompaia da destra*/
+    transform: scaleX(0);   
+    transition: transform .5s;  /* così che la linea sotto appaia lentamente*/
+}
+
+#godiv button:hover {
+    color: #ddc962;
+}
+
+.section_div {
+  z-index: 16;
+  margin-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+.section_div h1 {
+  padding-bottom: 20px;
+}
+
+.subsection_div {
+  padding-bottom: 100px;
+}
+
+.subsection_div .img_div {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.img_div img {
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+}
