@@ -7,7 +7,7 @@ function caricaSezione() {
         return;
       }
     }
-    alert("Impossibile caricare la sezione.");
+    alert("Selezionare una sezione valida.");
   }
 
   function caricaImg(sezione) {

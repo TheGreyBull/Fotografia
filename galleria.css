@@ -189,6 +189,10 @@ position: relative;
   padding-bottom: 10px;
 }
 
+.subsection_div .two_img {
+    justify-content: space-around;
+}
+
 .img_div img {
   width: 400px;
   height: 300px;
